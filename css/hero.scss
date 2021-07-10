@@ -1,0 +1,522 @@
+section.hero {
+background: url("/img/herosectionbackground.jfif") no-repeat;
+background-size: 100% 100%; 
+min-height: $containerHeight;
+max-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+.logo {
+    margin-left:40px;
+    margin-top:25px;
+
+}
+
+.menu-item {
+    margin-right:15px;
+    margin-top:28px;
+}
+
+.menu-link {
+    color: white;
+    line-height: 139%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-top-contacts {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 18px;
+    margin-top:28px;
+    margin-right:40px;
+    position: relative;
+}
+
+.header-top-contacts::before {
+    content: url("/img/phone.png") ;
+    display: block;
+    position: absolute;
+    left:-20px;
+}
+
+.header-top-contacts-tel {
+    color:white;
+    text-decoration: none;
+}
+
+.hero-title-section {
+    margin-top: 40px;
+    margin-left:40px;
+}
+
+.hero-main-slogan {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 28px;
+    color:white;
+    margin-top: 80px;
+    max-width: 580px;
+
+}
+
+.hero-main-slogan-slogan {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    margin-top: 40px;
+max-width: 380px;
+}
+
+.btn {
+    color: black;
+    background: yellow;
+    width:150px;
+    height:60px;
+    text-decoration: none;
+font-weight: 700;
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 21px 41px;
+margin-top: 50px;
+margin-bottom: 75px;
+
+border-radius: 100px;
+border: none;
+
+    &-theme-transparent {background: transparent; color:white;}
+}
+
+.features {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    }
+
+    .features-item {
+        display: flex;
+        justify-content: left;
+    align-items:center;
+    margin-bottom: 10px;
+
+    }
+
+    .features-icon {
+        margin-right: 10px;
+        width: 35px;
+        height: 35px;
+    
+    &:nth-child(1) {
+        margin-left:40px;
+    }
+}
+    .features-text {
+        color: white;
+        font-weight: 700;
+        line-height: 16px;
+        max-width: 90px;
+    }
+ 
+
+
+
+
+
+
+
+
+
+
+
+section.standard {
+    height: $containerHeight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headline-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    text-transform: uppercase;
+
+
+}
+
+.section-title {
+    margin-bottom: 15px;
+    margin-top: -100px;
+}
+
+.headline-subtitle {
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center;
+    color: $textColr;
+    margin-bottom:50px;
+   
+}
+
+.benefits {
+    display: flex;
+
+}
+
+.benefits-item {
+    flex:1;
+
+    &:first-child{margin-left:0;}
+    &:last-child {margin-right:0;}
+}
+
+.benefit {
+    text-align: center;
+}
+
+.benefit-image-wrapper {
+    display: inline-block;
+    width:128px;
+    height:128px;
+    position:relative;
+    background: #F2F5F4;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.benefit-icon {
+    width:68px;
+    height: 68px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.a {
+    background: url("/img/perfectfit.png");
+}
+
+.b {
+    background: url("/img/strong.png");
+}
+
+.c {
+    background: url("/img/inique.png");
+}
+
+.benefit-title {
+    
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.benefit-desc {
+    color:$textColr;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.reviews-block {
+    background-color: #F8FAF9;
+    padding: 40px 140px 40px 40px;
+    }
+
+.reviews-block-inner {
+display: flex;
+justify-content: space-around;
+}
+
+.reviews-avatar {
+    width:250px;
+    height:260px;
+}
+
+.reviews-avatar-img {
+
+    width:100%;
+    height:100%;
+    object-fit: cover;
+
+}
+
+.reviews-content {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.reviews-title {
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 40px;
+
+}
+
+.reviews-text {
+    color: $textColr;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.reviews-author {
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.reviews-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.interactive-avatar {
+    width:74px;
+    height:74px;
+    border: 6px solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+    .interactive-avatar:hover {border-color: #FEDB3F;}
+
+
+.interactive-avatar-link {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display: block;
+
+    }
+
+    .interactive-avatar-pic {
+        display: block;
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    section.order {
+        background: url("/img/formback.jfif") no-repeat;
+        background-size: 100% 100%; 
+        min-height: $containerHeight;
+        max-height: 100vh;
+        }
+
+
+    .form {
+        display: flex;
+        margin-top: 150px;
+    }
+
+    .form-col {
+        flex: 1;
+        margin-right: 20px;
+
+        &:last-child{margin-right: 0;}
+    }
+
+    .form-row {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .form-block {
+        flex: 1;
+        margin-right:20px;
+
+        &:last-child{margin-right: 0;}
+    }
+
+    .form-input {
+        width:100%;
+        border: none;
+        border-radius: 4px;
+        padding: 18px 12px;
+        
+
+        &-textarea {height:150px; resize: none;}
+
+        &:focus {border:3px solid  #FEDB3F; outline: none;}
+    }
+
+    .form-controls {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .radio {
+        display: flex;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .radio-element {
+       display: none;
+
+       &:checked+.radio-visible {
+           &::before{display: block;}
+       }
+     }
+
+    .radio-visible {
+        position: relative;
+        border-radius: 50%;
+        background-color: white;
+        width: 24px;
+        height: 24px;
+        
+        &::before {
+            display: none;
+            content: "";
+             width: 12px;
+             height:12px;
+             background: yellow;
+             border-radius: 50%;    
+             position: absolute;
+             top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    .radio-visible-check {
+        border-radius: 4px;
+        width: 24px;
+        height: 24px;
+      
+        background: url("/img/click.png") no-repeat 50% 50%;  
+        background-color: white;
+    }
+
+
+
+    .form-title {
+        line-height: 22px;
+        font-weight: 400;
+        color: white;
+    }
+
+    .radio-title {
+        line-height: 22px;
+        font-weight: 400;
+        color: white;
+        margin-left: 10px;
+
+    }
+ 
+
+    .order-title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        margin-top: -0px;
+        position: relative;
+        top: 80px;
+    }
+
+    label.radio {
+        margin-bottom: 20px;
+        margin-right: 20px;
+
+    }
+
+    h2.headline-title-order {
+        font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    top: 80px;
+    position: relative;
+    }
+
+
+
+
+    .fixed-menu {
+        position: fixed;
+        top:20%;
+        right: 4%;
+        z-index: $z-fixed-menu;
+    }
+
+    .fixed-menu-item {
+        margin-bottom: 5px;
+
+        &-active {
+            .fixed-menu-link{border-color: white;}
+        }
+    }
+
+    .fixed-menu-link {
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        display: block;
+        position: relative;
+
+        &::before{
+            content: "";
+             display: block; 
+             width: 6px; 
+             height: 6px;
+              background-color: white;
+              border-radius: 50%; 
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+        }
+    }

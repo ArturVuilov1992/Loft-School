@@ -1,0 +1,20 @@
+$containerWidth:1100px;
+$containerHeight:650px;
+$baseFontSize: 18px;
+
+$z-fixed-menu:100;
+
+$textColr:#666666;
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+
+@import "layout";
+
+
+@import "hero.scss";
+
+
+
+

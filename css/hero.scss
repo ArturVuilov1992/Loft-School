@@ -1,8 +1,8 @@
 section.hero {
 background: url("/img/herosectionbackground.jfif") no-repeat;
-background-size: cover; <! –– and the comment closes with не меняет пропорции но заполняет все пространство––>
+background-size: cover; <! –– не меняет пропорции но заполняет все пространство––>
 min-height: $containerHeight;
-height: 100vh; <! –– and the comment closes with ––>
+height: 100vh; <! –– !!!!!!!!   ––>
 }
 
 <! –– если фон то картинка через ссс а если часть контента ть имж с срс––>
@@ -71,7 +71,6 @@ header {
     color:white;
     margin-top: 80px;
     max-width: 580px;
-
 }
 
 .hero-main-slogan-slogan {
@@ -114,7 +113,6 @@ border: none;
         justify-content: left;
     align-items:center;
     margin-bottom: 10px;
-
     }
 
     .features-icon {
@@ -133,17 +131,7 @@ border: none;
         max-width: 90px;
     }
  
-
-
-
-
-
-
-
-
-
-
-
+/////////////////////////////////////////////////
 section.standard {
     height: 100vh;
     min-height: $containerHeight;
@@ -160,7 +148,6 @@ section.standard {
     text-align: center;
     text-transform: uppercase;
 
-
 }
 
 .section-title {
@@ -174,17 +161,14 @@ section.standard {
     text-align: center;
     color: $textColr;
     margin-bottom:50px;
-   
-}
+   }
 
 .benefits {
     display: flex;
-
 }
 
 .benefits-item {
     flex:1;
-
     &:first-child{margin-left:0;}
     &:last-child {margin-right:0;}
 }
@@ -210,19 +194,9 @@ section.standard {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-}
+    background: no-repeat;
+};
 
-.a {
-    background: url("/img/perfectfit.png");
-}
-
-.b {
-    background: url("/img/strong.png");
-}
-
-.c {
-    background: url("/img/inique.png");
-}
 
 .benefit-title {
     
@@ -231,7 +205,6 @@ section.standard {
     line-height: 32px;
     margin-bottom: 20px;
     margin-top: 20px;
-
 }
 
 .benefit-desc {
@@ -240,15 +213,7 @@ section.standard {
     line-height: 22px;
 }
 
-
-
-
-
-
-
-
-
-
+/////////////////////////
 
 .reviews-block {
     background-color: #F8FAF9;
@@ -270,7 +235,6 @@ justify-content: space-around;
     width:100%;
     height:100%;
     object-fit: cover;
-
 }
 
 .reviews-content {
@@ -284,7 +248,6 @@ justify-content: space-around;
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 40px;
-
 }
 
 .reviews-text {
@@ -304,7 +267,6 @@ justify-content: space-around;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-
 }
 
 .interactive-avatar {
@@ -315,9 +277,9 @@ justify-content: space-around;
     overflow: hidden;
     position: relative;
 }
-    .interactive-avatar:hover {border-color: #FEDB3F;}
-
-
+.interactive-avatar:hover {
+    border-color: #FEDB3F;
+}
 .interactive-avatar-link {
     position: absolute;
     top:0;
@@ -325,7 +287,6 @@ justify-content: space-around;
     left:0;
     right:0;
     display: block;
-
     }
 
     .interactive-avatar-pic {
@@ -334,24 +295,13 @@ justify-content: space-around;
         height:100%;
         object-fit: cover;
     }
-
-
-
-
-
-
-
-
-
-
-
+//////////////////////////////////////
     section.order {
         background: url("/img/formback.jfif") no-repeat;
         background-size: cover; 
         min-height: $containerHeight;
         height: 100vh;
         }
-
 
     .form {
         display: flex;
@@ -404,7 +354,7 @@ justify-content: space-around;
     .radio-element {
        display: none;
 
-       &:checked+.radio-visible {
+       &:checked+.radio-visible, .radio-visible-check {
            &::before{display: block;}
        }
      }
@@ -435,28 +385,31 @@ justify-content: space-around;
         width: 24px;
         height: 24px;
       
-        background: url("/img/click.png") no-repeat 50% 50%;  
         background-color: white;
+
+        &::before {
+            display: none;
+            content: "";
+             width: 12px;
+             height:12px;
+             background: url("/img/click.png");
+             position: absolute;
+             top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);        }
     }
-
-
-
     .form-title {
         line-height: 22px;
         font-weight: 400;
         color: white;
     }
-
     .radio-title {
         line-height: 22px;
         font-weight: 400;
         color: white;
         margin-left: 10px;
-
     }
- 
-
-    .order-title {
+     .order-title {
         font-weight: 700;
         font-size: 48px;
         line-height: 58px;
@@ -471,7 +424,6 @@ justify-content: space-around;
     label.radio {
         margin-bottom: 20px;
         margin-right: 20px;
-
     }
 
     h2.headline-title-order {
@@ -484,10 +436,7 @@ justify-content: space-around;
     top: 80px;
     position: relative;
     }
-
-
-
-
+////////////////////////////////
     .fixed-menu {
         position: fixed;
         top:20%;

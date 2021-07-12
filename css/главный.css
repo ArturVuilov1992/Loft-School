@@ -92,35 +92,6 @@ header {
   max-width: 380px;
 }
 
-.btn {
-  color: black;
-  background: yellow;
-  width: 150px;
-  height: 60px;
-  text-decoration: none;
-  font-weight: 700;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 21px 41px;
-  margin-top: 50px;
-  margin-bottom: 75px;
-  cursor: pointer;
-  border-radius: 100px;
-  border: none;
-}
-.btn-theme-transparent {
-  background: transparent;
-  color: white;
-}
-
 .features {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -625,4 +596,33 @@ section.standard {
   color: #666666;
   font-weight: 300;
   line-height: 22px;
+}
+
+.btn {
+  color: black;
+  background: yellow;
+  width: 150px;
+  height: 60px;
+  text-decoration: none;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 21px 41px;
+  margin-top: 50px;
+  margin-bottom: 75px;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+}
+.btn-theme-transparent {
+  background: transparent;
+  color: white;
 }

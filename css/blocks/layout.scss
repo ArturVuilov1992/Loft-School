@@ -22,7 +22,7 @@ body {
 .container {
     max-width: $containerWidth;
     margin: 0 auto;
-    width: 99% <! –– and the comment closes with –– чтобы были небольште отступы>; 
+    width: 99%; 
     }
 h1,
 h2,
@@ -66,3 +66,4 @@ img {
     display: block;
     max-width: 100%;
 }
+

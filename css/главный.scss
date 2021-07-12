@@ -10,11 +10,15 @@ $textColr:#666666;
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
 
-@import "layout";
+@import "./blocks/1block.scss";
 
+@import "./blocks/layout.scss";
 
-@import "hero.scss";
+@import "./blocks/fixed.scss";
 
+@import "./blocks/forms.scss";
 
+@import "./blocks/reviews.scss";
 
+@import "./blocks/benefits.scss";
 

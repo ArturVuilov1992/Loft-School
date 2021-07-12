@@ -1,0 +1,137 @@
+section.hero {
+    background: url(../img/herosectionbackground.jfif) no-repeat;
+    background-size: cover; 
+    min-height: $containerHeight;
+    height: 100vh;
+    }
+    
+   
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .menu-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+    
+    .logo {
+        margin-left:40px;
+        margin-top:26px;
+    
+    }
+    
+    .menu-item {
+        margin-right:15px;
+        margin-top:26px;
+    }
+    
+    .menu-link {
+        color: white;
+        line-height: 138%;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .header-top-contacts {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 18px;
+        margin-top:26px;
+        margin-right:40px;
+        position: relative;
+    }
+    
+    .header-top-contacts::before {
+        content: url("/img/phone.png") ;
+        display: block;
+        position: absolute;
+        left:-20px;
+    }
+    
+    .header-top-contacts-tel {
+        color:white;
+        text-decoration: none;
+    }
+    
+    .hero-title-section {
+        margin-top: 40px;
+        margin-left:40px;
+    }
+    
+    .hero-main-slogan {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 28px;
+        color:white;
+        margin-top: 80px;
+        max-width: 580px;
+    }
+    
+    .hero-main-slogan-slogan {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: white;
+        margin-top: 40px;
+    max-width: 380px;
+    }
+    
+    .btn {
+        color: black;
+        background: yellow;
+        width:150px;
+        height:60px;
+        text-decoration: none;
+    font-weight: 700;
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 21px 41px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    
+        &-theme-transparent {background: transparent; color:white;}
+    }
+    
+    .features {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        }
+    
+        .features-item {
+            display: flex;
+            justify-content: left;
+        align-items:center;
+        margin-bottom: 10px;
+        }
+    
+        .features-icon {
+            margin-right: 10px;
+            width: 35px;
+            height: 35px;
+        
+        &:nth-child(1) {
+            margin-left:40px;
+        }
+    }
+        .features-text {
+            color: white;
+            font-weight: 700;
+            line-height: 16px;
+            max-width: 90px;
+        }
+     
+   
+    
+    
+   
+    

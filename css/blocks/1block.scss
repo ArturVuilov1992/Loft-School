@@ -1,10 +1,12 @@
 section.hero {
-   @include section;
+    background-size: cover; 
+    min-height: 650px;
+    height: 100vh;
     background: url(../img/herosectionbackground.jfif) no-repeat;
     };
-    
-   
-    
+     
+      
+      
     header {
         display: flex;
         align-items: center;

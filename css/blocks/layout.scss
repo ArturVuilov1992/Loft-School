@@ -67,3 +67,17 @@ img {
     max-width: 100%;
 }
 
+.standard {
+    background-size: cover;
+    height: 100vh;
+    min-height: $containerHeight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@mixin  section {
+    background-size: cover; 
+    min-height: $containerHeight;
+    height: 100vh;
+};

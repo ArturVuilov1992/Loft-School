@@ -1,9 +1,7 @@
 section.hero {
+   @include section;
     background: url(../img/herosectionbackground.jfif) no-repeat;
-    background-size: cover; 
-    min-height: $containerHeight;
-    height: 100vh;
-    }
+    };
     
    
     

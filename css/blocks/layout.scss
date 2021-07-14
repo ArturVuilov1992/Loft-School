@@ -10,7 +10,7 @@ body {
     -moz-osx-font-smoothing:grayscale;
     position:relative;
 }
-
+ 
 .wrapper {
     position:relative;
     width:100%;
@@ -18,7 +18,7 @@ body {
     min-height: 100%;
     overflow: hidden;
 }
-
+ 
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -76,9 +76,32 @@ img {
     justify-content: center;
     flex-direction: column;
 }
-@mixin  section {
+
+  @mixin background-image-size {
     background-size: cover; 
-    min-height: 650px;
+    min-height: $containerHeight;
     height: 100vh;
-}; 
-  
+  }
+
+  @mixin sub-headlines {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @mixin big-headlines {
+    font-weight: 700;
+    font-size: 48px;
+      }
+
+@mixin regular-lines {
+    line-height: 22px;
+    font-weight: 400;
+    color: white;
+}
+
+@mixin center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

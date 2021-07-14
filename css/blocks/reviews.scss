@@ -12,7 +12,7 @@ justify-content: space-around;
     width:250px;
     height:260px;
 }
-
+ 
 .reviews-avatar-img {
 
     width:100%;
@@ -46,9 +46,7 @@ justify-content: space-around;
 }
 
 .reviews-switcher {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @mixin center-flex;
     margin-top: 10px;
 }
 

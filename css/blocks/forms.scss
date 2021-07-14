@@ -1,8 +1,6 @@
     section.order {
         background: url("../img/formback.jfif") no-repeat;
-        background-size: cover; 
-        min-height: $containerHeight;
-        height: 100vh;
+        @include background-image-size;
         }
 
     .form {
@@ -101,27 +99,12 @@
             transform: translate(-50%,-30%);        }
     }
     .form-title {
-        line-height: 22px;
-        font-weight: 400;
-        color: white;
+        @mixin regular-lines;
     }
     .radio-title {
-        line-height: 22px;
-        font-weight: 400;
-        color: white;
-        margin-left: 10px;
+        @mixin regular-lines;
     }
-     .order-title {
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 58px;
-        text-align: center;
-        text-transform: uppercase;
-        color: white;
-        margin-top: -0px;
-        position: relative;
-        top: 80px;
-    }
+
 
     label.radio {
         margin-bottom: 20px;
@@ -129,8 +112,7 @@
     }
 
     h2.headline-title-order {
-        font-weight: 700;
-    font-size: 48px;
+    @include big-headlines;
     line-height: 58px;
     text-align: center;
     text-transform: uppercase;

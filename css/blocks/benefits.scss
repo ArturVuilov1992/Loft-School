@@ -1,6 +1,5 @@
 .headline-title {
-    font-weight: 700;
-    font-size: 48px;
+    @mixin big-headlines;
     line-height: 58px;
     text-align: center;
     text-transform: uppercase;

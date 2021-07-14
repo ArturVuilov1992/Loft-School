@@ -1,9 +1,7 @@
-section.hero {
-    background-size: cover; 
-    min-height: 650px;
-    height: 100vh;
-    background: url(../img/herosectionbackground.jfif) no-repeat;
-    };
+    section.hero {
+        background: url("../img/herosectionbackground.jfif") no-repeat;
+        @include background-image-size;
+        }; 
      
       
       
@@ -64,8 +62,7 @@ section.hero {
     }
     
     .hero-main-slogan {
-        font-weight: 700;
-        font-size: 48px;
+        @include big-headlines;
         line-height: 28px;
         color:white;
         margin-top: 80px;
@@ -73,12 +70,10 @@ section.hero {
     }
     
     .hero-main-slogan-slogan {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 25px;
+        @include sub-headlines;
         color: white;
         margin-top: 40px;
-    max-width: 380px;
+        max-width: 380px;
     }
     
     

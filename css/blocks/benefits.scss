@@ -1,22 +1,22 @@
 .headline-title {
-    @mixin big-headlines;
-    line-height: 58px;
+    @include big-headlines;
+    line-height: 3.2222rem;
     text-align: center;
     text-transform: uppercase;
 
 }
 
 .section-title {
-    margin-bottom: 15px;
-    margin-top: -100px;
+    margin-bottom: 0.8333rem;
+    margin-top: -5.5556rem;
 }
 
 .headline-subtitle {
     font-weight: 400;
-    line-height: 15px;
+    line-height: 0.8333rem;
     text-align: center;
     color: $textColr;
-    margin-bottom:50px;
+    margin-bottom:2.7778rem;
    }
 
 .benefits {
@@ -35,8 +35,8 @@
 
 .benefit-image-wrapper {
     display: inline-block;
-    width:128px;
-    height:128px;
+    width:7.1111rem;
+    height:7.1111rem;
     position:relative;
     background: #F2F5F4;
     border-radius: 50%;
@@ -44,8 +44,8 @@
 }
 
 .benefit-icon {
-    width:68px;
-    height: 68px;
+    width:3.7778rem;
+    height: 3.7778rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -57,14 +57,14 @@
 .benefit-title {
     
     font-weight: 700;
-    font-size: 27px;
-    line-height: 32px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    font-size: 1.5rem;
+    line-height: 1.7778rem;
+    margin-bottom: 1.1111rem;
+    margin-top: 1.1111rem;
 }
 
 .benefit-desc {
     color:$textColr;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 1.2222rem;
 }

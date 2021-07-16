@@ -1,16 +1,27 @@
 .reviews-block {
     background-color: #F8FAF9;
-    padding: 40px 140px 40px 40px;
+    padding: 2.2222rem 7.7778rem 2.2222rem 2.2222rem;
     }
 
 .reviews-block-inner {
 display: flex;
 justify-content: space-around;
+
+@include tablets {
+    flex-direction: column;
+    text-align: center;
+align-items: center;}
 }
 
 .reviews-avatar {
-    width:250px;
-    height:260px;
+    width:13.8889rem;
+    height:14.4444rem;
+
+    @include tablets {
+    width: 7.3333rem;
+    height: 7.2222rem;
+}
+    
 }
  
 .reviews-avatar-img {
@@ -22,37 +33,42 @@ justify-content: space-around;
 
 .reviews-content {
     flex: 1;
-    margin-left: 20px;
+    margin-left: 1.1111rem;
 }
 
 .reviews-title {
-    font-size: 27px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 1.7778rem;
     font-weight: 700;
-    margin-bottom: 10px;
-    margin-top: 40px;
+    margin-bottom: 0.5556rem;
+    margin-top: 2.2222rem;
 }
 
 .reviews-text {
     color: $textColr;
-    line-height: 22px;
+    line-height: 1.2222rem;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 1.1111rem;
 }
 
 .reviews-author {
-    line-height: 24px;
+    line-height: 1.3333rem;
     font-weight: 500;
 }
 
 .reviews-switcher {
-    @mixin center-flex;
-    margin-top: 10px;
+    @include center-flex;
+    margin-top: 0.5556rem;
+
+    @include tablets {
+        margin-bottom:0.5556rem;
+
+    }
 }
 
 .interactive-avatar {
-    width:74px;
-    height:74px;
+    width:4.1111rem;
+    height:4.1111rem;
     border: 6px solid transparent;
     border-radius: 50%;
     overflow: hidden;

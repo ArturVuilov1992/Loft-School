@@ -1,11 +1,18 @@
 $containerWidth:1100px;
-$containerHeight:650px;
+$containerHeight:36.1111rem;
 $baseFontSize: 18px;
 $z-fixed-menu:100;
+
+//color
 $textColr:#666666;
+
+//breakpoints
+$tablets:768px;
+$phones:480px;
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+@import "./blocks/media.scss";
 @import "./blocks/layout.scss";
 @import "./blocks/1block.scss";
 @import "./blocks/benefits.scss";
@@ -13,13 +20,3 @@ $textColr:#666666;
 @import "./blocks/forms.scss";
 @import "./blocks/fixed.scss";
 @import "./blocks/btn.scss";
-
-
-@media (min-width:480px) {
-};
-@media (min-width:768px) {
-};
-@media (min-width:992px) {
-};
-@media (min-width:1200px) {
-};

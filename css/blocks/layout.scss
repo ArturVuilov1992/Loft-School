@@ -1,9 +1,20 @@
+html {
+font-size: $baseFontSize;
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;  
+    };
+
+    @include phones {
+        font-size:$baseFontSize - 2px;  
+    };
+} 
+ 
 html,body {
     height: 100%;
 }
 
 body {
-    font-size: 18px;
     font-family: "Allegreya Sans", Arial, Helvetica, sans-serif;
     line-height:21,6px;
     -webkit-font-smoothing:antialiased;
@@ -14,15 +25,14 @@ body {
 .wrapper {
     position:relative;
     width:100%;
-    min-width: 1100px;
     min-height: 100%;
     overflow: hidden;
 }
  
 .container {
-    max-width: 1100px;
+    max-width: $containerWidth;
     margin: 0 auto;
-    width: 99%; 
+    width: 95%; 
     }
 h1,
 h2,
@@ -68,16 +78,15 @@ img {
 }
 
 .standard {
-    background-size: cover;
     height: 100vh;
-    min-height: 650pxt;
+    min-height: 36.1111rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-  @mixin background-image-size {
+@mixin background-image-size {
     background-size: cover; 
     min-height: $containerHeight;
     height: 100vh;
@@ -85,17 +94,17 @@ img {
 
   @mixin sub-headlines {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1rem;
+    line-height: 1.3889rem;
   }
 
   @mixin big-headlines {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 2.6667rem;
       }
 
 @mixin regular-lines {
-    line-height: 22px;
+    line-height: 1.2222rem;
     font-weight: 400;
     color: white;
 }

@@ -42,7 +42,7 @@
                 
  
                     <div class="hero-title-section">
-                        <h1 class="hero-main-slogan">Профессиональные <br></br> доски для <br></br> сёрфинга</h1>
+                        <h1 class="hero-main-slogan">Профессиональные доски для сёрфинга</h1>
                         <p class="hero-main-slogan-slogan"> Самый большой выбор сёрфбордов в мире </p>
                         <a href="#" class="btn btn-title-section"> Заказать </a> 
                     </div>
@@ -50,17 +50,32 @@
                     <div class="hero-icons-section">
                         <ul class="features">
                             <li class="feature features-item">
-                                <div class="features-icon"><img src="img/board.png" alt=""></div>
+                                <div class="features-icon">
+                                    <picture>
+                                        <source media="(min-width:768px)" srcset="img/board.png">
+                                        <img src="" alt="">
+                                    </picture>
+                                </div>
                                 <div class="features-text"> Уникальный дизайн </div>
                             </li>
 
                             <li class="feature features-item">
-                                <div class="features-icon"><img src="img/wood.png" alt=""></div>
+                                <div class="features-icon">
+                                    <picture>
+                                        <source media="(min-width:768px)" srcset="img/wood.png">
+                                        <img src="" alt="">
+                                    </picture>
+                                </div>
                                 <div class="features-text"> Прочные материалы </div>
                             </li>
 
                             <li class="feature features-item">
-                                <div class="features-icon"><img src="img/van.png" alt=""></div>
+                                <div class="features-icon">
+                                    <picture>
+                                        <source media="(min-width:768px)" srcset="img/van.png">
+                                        <img src="" alt="">
+                                    </picture>
+                                </div>
                                 <div class="features-text"> Быстрая доставка </div>
                             </li>
                         </ul>
@@ -236,7 +251,7 @@
                             <div class="form-controls">
                                 <label  class="radio">
                                     <input type="radio" class="radio-element" name="option">
-                                    <div class="radio-visible"></div>
+                                    <div class="radio-visible  form__btns"></div>
                                     <div class="radio-title"> Оплата наличными </div>
                                 </label>
 
@@ -254,70 +269,20 @@
                                 </label>
                             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            
-
-                            <div class="form-controls">
-                                <button type="submit" class="btn btn-theme-yellow"> Заказать </button>
-                                <input type="reset" value="Очистить" class="btn btn-theme-transparent" >
+                        <div class="form__btns">
+                                <input type="submit" value="Заказать"  class="btn btn-theme-yellow">
+                                <input type="reset" value="Очистить"   class="btn btn-theme-transparent">
                             </div>
                         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    </form>
-                                
-
-
+                    </form>         
                 </div> 
-                
             </section>
 
 </div>
 </div>
 
             <nav class="fixed-menu">
-
                 <ul class="fixed-menu-list">
-
                     <li class="fixed-menu-item fixed-menu-item-active">
                         <a href="" class="fixed-menu-link"></a>
                     </li>
@@ -353,9 +318,7 @@
                     <li class="fixed-menu-item">
                         <a href="" class="fixed-menu-link"></a>
                     </li>
-
                 </ul>
-
             </nav>
  
 </body>

@@ -20,6 +20,7 @@ align-items: center;}
     @include tablets {
     width: 7.3333rem;
     height: 7.2222rem;
+    margin-left: 4.4444rem;
 }
     
 }
@@ -42,6 +43,11 @@ align-items: center;}
     font-weight: 700;
     margin-bottom: 0.5556rem;
     margin-top: 2.2222rem;
+
+    @include tablets {
+        
+        margin-left: 3.3333rem;
+    }
 }
 
 .reviews-text {
@@ -49,11 +55,21 @@ align-items: center;}
     line-height: 1.2222rem;
     font-weight: 400;
     margin-bottom: 1.1111rem;
+
+    @include tablets {
+        
+        margin-left: 3.3333rem;
+    }
 }
 
 .reviews-author {
     line-height: 1.3333rem;
     font-weight: 500;
+
+    @include tablets {
+        
+        margin-left: 50px;
+    }
 }
 
 .reviews-switcher {

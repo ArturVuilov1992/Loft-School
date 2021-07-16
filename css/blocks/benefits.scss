@@ -1,3 +1,7 @@
+.headline {
+    margin-top:300px;
+}
+
 .headline-title {
     @include big-headlines;
     line-height: 3.2222rem;
@@ -21,16 +25,30 @@
 
 .benefits {
     display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .benefits-item {
     flex:1;
+    position: relative;
     &:first-child{margin-left:0;}
     &:last-child {margin-right:0;}
+
+    @include phones {
+        padding: 0;
+    }
 }
 
 .benefit {
     text-align: center;
+
+    @include phones {
+        display: flex;
+        text-align: left;
+    }
 }
 
 .benefit-image-wrapper {
@@ -41,6 +59,10 @@
     background: #F2F5F4;
     border-radius: 50%;
     overflow: hidden;
+
+    @include phones {
+    margin-right: 1.1111rem;
+    }
 }
 
 .benefit-icon {

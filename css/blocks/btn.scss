@@ -2,8 +2,9 @@
 
     @include tablets {
         display: flex;
-        width:50%;
         justify-content: center;
+        width: 8.6667rem;
+        height: 3.3333rem;
     };
     color: black;
     background: yellow;

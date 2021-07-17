@@ -1,13 +1,20 @@
 section.footer {
     width: 100vw;
     max-height: 5.2222rem;
-    background-color: orange;
+    min-height: 0;
+
 }
 
 .footer__info {
+    width: 100%;
 display: flex;
-align-items:flex-end;
+align-items:center;
 justify-content: space-between;
+
+}
+
+.footer-contacts {
+    margin-left: 2rem;
 }
 
 .footer__address {
@@ -27,6 +34,7 @@ justify-content: space-between;
     font-size: 1.1667rem;
     line-height: 83%;
     color: black; 
+    text-decoration: none;
 }
     
 .footer__call::before {
@@ -35,3 +43,8 @@ justify-content: space-between;
     left:-1.1111rem;
     flex-shrink: 0;
 };
+
+
+
+
+

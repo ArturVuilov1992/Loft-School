@@ -921,19 +921,24 @@ h2.headline-title-order {
 section.footer {
   width: 100vw;
   max-height: 5.2222rem;
-  background-color: orange;
+  min-height: 0;
 }
 
 .footer__info {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer-contacts {
+  margin-left: 2rem;
 }
 
 .footer__address {
@@ -953,6 +958,7 @@ section.footer {
   font-size: 1.1667rem;
   line-height: 83%;
   color: black;
+  text-decoration: none;
 }
 
 .footer__call::before {
@@ -961,4 +967,18 @@ section.footer {
   left: -1.1111rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.sprite {
+  margin-right: 4rem;
+}
+
+.sprite-item {
+  width: 20px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.sprite__link {
+  text-decoration: none;
 }

@@ -85,8 +85,6 @@ img {
 }
 
 .standard {
-  height: auto;
-  min-height: 36.1111rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,14 +101,14 @@ img {
 }
 
 section {
-  height: auto;
+  height: 100vh;
+  min-height: 50rem;
 }
 
 section.hero {
   background: url("../img/herosectionbackground.jfif");
   background-size: cover;
-  min-height: 36.1111rem;
-  height: 100vh;
+  width: 100%;
 }
 
 header.header-top {
@@ -123,6 +121,7 @@ header.header-top {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 8rem;
 }
 @media screen and (max-width: 768px) {
   header.header-top {
@@ -223,9 +222,9 @@ header.header-top {
 }
 
 .hero-title-section {
+  margin-left: 2rem;
   width: 46%;
   margin-top: 2.2222rem;
-  margin-left: 2.2222rem;
 }
 @media screen and (max-width: 768px) {
   .hero-title-section {
@@ -268,6 +267,7 @@ header.header-top {
 @media screen and (max-width: 480px) {
   .hero-main-slogan {
     font-size: 2.2222rem;
+    margin-right: 3rem;
   }
 }
 
@@ -290,7 +290,21 @@ header.header-top {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  .hero-main-slogan-slogan {
+    margin-right: 3rem;
+  }
+}
+
+.btn-title-section {
+  margin-bottom: 12vw;
+}
+@media screen and (max-width: 480px) {
+  .btn-title-section {
+    margin-right: 3rem;
   }
 }
 
@@ -322,7 +336,6 @@ header.header-top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 0.5556rem;
 }
 
 .features-icon {
@@ -406,6 +419,7 @@ header.header-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 6rem;
 }
 @media screen and (max-width: 480px) {
   .benefits {
@@ -496,6 +510,10 @@ header.header-top {
   line-height: 1.2222rem;
 }
 
+.reviews {
+  margin-bottom: 7rem;
+}
+
 .reviews-block {
   background-color: #F8FAF9;
   padding: 2.2222rem 7.7778rem 2.2222rem 2.2222rem;
@@ -571,6 +589,11 @@ header.header-top {
     margin-left: 3.3333rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .reviews-text {
+    text-align: justify;
+  }
+}
 
 .reviews-author {
   line-height: 1.3333rem;
@@ -633,9 +656,7 @@ header.header-top {
 section.order {
   background: url("../img/formback.jfif") no-repeat;
   background-size: cover;
-  min-height: 36.1111rem;
-  height: 100vh;
-  height: auto;
+  width: 100%;
 }
 
 h2.headline-title-order {
@@ -679,6 +700,11 @@ h2.headline-title-order {
 .form-col:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 768px) {
+  .form-col:last-child {
+    margin-right: 0;
+  }
+}
 .form-col .form-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -704,6 +730,7 @@ h2.headline-title-order {
 .form-col .form-input-textarea {
   height: 8.3333rem;
   resize: none;
+  width: 96%;
 }
 .form-col .form-input:focus {
   border-color: #FEDB3F;
@@ -863,8 +890,6 @@ h2.headline-title-order {
       -ms-flex-align: center;
           align-items: center;
   padding: 1.1667rem 2rem;
-  margin-top: 2.7778rem;
-  margin-bottom: 4.1667rem;
   cursor: pointer;
   border-radius: 100px;
   border: none;
@@ -884,4 +909,56 @@ h2.headline-title-order {
 .btn-theme-transparent {
   background: transparent;
   color: white;
+}
+
+.image__map {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.footer {
+  width: 100vw;
+  max-height: 5.2222rem;
+  background-color: orange;
+}
+
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__address {
+  font-size: 1.1667rem;
+  line-height: 95%;
+  color: black;
+  margin-left: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer__call {
+  margin-left: 6rem;
+  position: relative;
+}
+
+.footer__phone-number {
+  font-size: 1.1667rem;
+  line-height: 83%;
+  color: black;
+}
+
+.footer__call::before {
+  content: url("/img/phone2.png");
+  position: absolute;
+  left: -1.1111rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }

@@ -1,0 +1,37 @@
+section.footer {
+    width: 100vw;
+    max-height: 5.2222rem;
+    background-color: orange;
+}
+
+.footer__info {
+display: flex;
+align-items:flex-end;
+justify-content: space-between;
+}
+
+.footer__address {
+    font-size: 1.1667rem;
+    line-height: 95%;
+    color: black;
+    margin-left: 5rem;  
+    margin-bottom: 1.5rem;  
+}
+.footer__call {
+        margin-left: 6rem;   
+        position: relative;
+
+
+}
+.footer__phone-number {
+    font-size: 1.1667rem;
+    line-height: 83%;
+    color: black; 
+}
+    
+.footer__call::before {
+    content: url("/img/phone2.png") ;
+    position: absolute;
+    left:-1.1111rem;
+    flex-shrink: 0;
+};

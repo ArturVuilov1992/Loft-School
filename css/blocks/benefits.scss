@@ -29,6 +29,7 @@
 
 .benefits {
     display: flex;
+    margin-bottom: 6rem;
 
     @include phones {
         flex-direction: column;

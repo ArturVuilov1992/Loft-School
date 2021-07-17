@@ -9,6 +9,7 @@ header.header-top {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-bottom: 8rem;
 
     @include tablets {
         width: 100%;
@@ -90,7 +91,11 @@ flex-flow: wrap;
     text-decoration: none;
 }
 
-.hero-title-section {
+
+
+.hero-title-section {        
+    margin-left: 2rem;
+
     @include tablets {
         width: 100%;
         flex:1;
@@ -102,7 +107,6 @@ flex-flow: wrap;
     };
     width: 46%;
     margin-top: 2.2222rem;
-    margin-left:2.2222rem;
 }
 
 .hero-main-slogan {
@@ -121,6 +125,7 @@ flex-flow: wrap;
 
     @include phones {
         font-size: 2.2222rem;
+        margin-right: 3rem;
     }
 }
 
@@ -132,7 +137,11 @@ flex-flow: wrap;
         font-size: 1.1667rem;
         display: flex;
         flex-wrap: nowrap;
-        margin-bottom: .5rem;
+        margin-bottom: 2rem;
+
+        @include phones {
+            margin-right: 3rem;
+        }
 
         
     };
@@ -144,16 +153,25 @@ flex-flow: wrap;
 }
 
 
+.btn-title-section {
+margin-bottom: 12vw;
 
+@include phones {
+    
+    margin-right: 3rem;
+}
+}
 
 
 
 
 
 .hero-icons-section {
+    
     @include tablets {
             display: none;
         }
+
 }
 
 .features {
@@ -166,7 +184,6 @@ flex-flow: wrap;
         display: flex;
         justify-content: left;
     align-items:center;
-    margin-bottom: 0.5556rem;
     }
 
     .features-icon {
@@ -185,6 +202,26 @@ flex-flow: wrap;
         max-width: 5rem;
     }
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hamburger {
     width: 24px;

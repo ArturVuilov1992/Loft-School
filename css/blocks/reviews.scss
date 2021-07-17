@@ -1,3 +1,6 @@
+.reviews {
+    margin-bottom: 7rem;
+}
 .reviews-block {
     background-color: #F8FAF9;
     padding: 2.2222rem 7.7778rem 2.2222rem 2.2222rem;
@@ -60,6 +63,9 @@ align-items: center;}
         
         margin-left: 3.3333rem;
     }
+
+    @include phones {
+    text-align: justify;    }
 }
 
 .reviews-author {

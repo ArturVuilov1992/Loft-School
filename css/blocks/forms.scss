@@ -1,7 +1,6 @@
 section.order {
     background: url("../img/formback.jfif") no-repeat;
     @include background-image-size;
-    height: auto;
     }
 
 
@@ -33,7 +32,9 @@ section.order {
 
     &:last-child{margin-right: 0;
     
- 
+        @include tablets {
+            margin-right: 0;
+        }
 }
 
 .form-row {
@@ -55,7 +56,7 @@ section.order {
     padding: 1rem 0.6667rem;
     border: 3px solid transparent;
 
-    &-textarea {height:8.3333rem; resize: none;}
+    &-textarea {height:8.3333rem; resize: none; width:96%;}
 
     &:focus {border-color: #FEDB3F; outline: none;}
 }

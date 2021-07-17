@@ -106,9 +106,10 @@ section {
 }
 
 section.hero {
-  background: url("../img/herosectionbackground.jfif");
+  background: url("../img/herosectionbackground.jfif") no-repeat;
   background-size: cover;
   width: 100%;
+  height: 100%;
 }
 
 header.header-top {
@@ -911,6 +912,23 @@ h2.headline-title-order {
   color: white;
 }
 
+.map {
+  max-height: 36.6667rem;
+  min-height: 0;
+}
+@media screen and (max-width: 768px) {
+  .map {
+    max-height: 29.4444rem;
+    min-height: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .map {
+    max-height: 27.2222rem;
+    min-height: 0;
+  }
+}
+
 .image__map {
   width: 100%;
   height: 100%;
@@ -922,6 +940,18 @@ section.footer {
   width: 100vw;
   max-height: 5.2222rem;
   min-height: 0;
+}
+@media screen and (max-width: 768px) {
+  section.footer {
+    max-height: 5.9444rem;
+    min-height: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  section.footer {
+    max-height: 8.3889rem;
+    min-height: 0;
+  }
 }
 
 .footer__info {

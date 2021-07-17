@@ -3,6 +3,16 @@ section.footer {
     max-height: 5.2222rem;
     min-height: 0;
 
+    @include tablets {
+        max-height: 5.9444rem;
+    min-height: 0;
+    }
+
+    @include phones {
+        max-height: 8.3889rem;
+        min-height: 0;
+    }
+
 }
 
 .footer__info {

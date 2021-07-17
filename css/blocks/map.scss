@@ -1,5 +1,28 @@
+.map {
+    max-height: 36.6667rem;
+    min-height: 0;
+
+    @include tablets {
+        max-height: 29.4444rem;
+    min-height: 0;
+    }
+
+    @include phones {
+        max-height: 27.2222rem;
+        min-height: 0;    }
+}
+
+
+
+
+
+
 .image__map {
     width:100%;
     height:100%;
     object-fit: cover;
+
+
 }
+
+

@@ -77,7 +77,7 @@ img {
 }
 
 .standard {
-    height: 100vh;
+    height: auto;
     min-height: 36.1111rem;
     display: flex;
     align-items: center;
@@ -112,4 +112,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+section {
+    height: auto;
 }

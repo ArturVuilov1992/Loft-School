@@ -85,7 +85,7 @@ img {
 }
 
 .standard {
-  height: 100vh;
+  height: auto;
   min-height: 36.1111rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,6 +100,10 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+section {
+  height: auto;
 }
 
 section.hero {
@@ -261,6 +265,11 @@ header.header-top {
     margin-bottom: -15px;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero-main-slogan {
+    font-size: 2.2222rem;
+  }
+}
 
 .hero-main-slogan-slogan {
   font-weight: 400;
@@ -374,6 +383,11 @@ header.header-top {
   text-align: center;
   text-transform: uppercase;
 }
+@media screen and (max-width: 480px) {
+  .headline-title {
+    font-size: 2.2222rem;
+  }
+}
 
 .section-title {
   margin-bottom: 0.8333rem;
@@ -399,6 +413,11 @@ header.header-top {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .benefits {
+    margin-bottom: 5rem;
   }
 }
 
@@ -464,6 +483,11 @@ header.header-top {
   line-height: 1.7778rem;
   margin-bottom: 1.1111rem;
   margin-top: 1.1111rem;
+}
+@media screen and (max-width: 480px) {
+  .benefit-title {
+    font-size: 1.5rem;
+  }
 }
 
 .benefit-desc {

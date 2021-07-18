@@ -207,7 +207,7 @@ header.header-top {
 }
 
 .header-top-contacts::before {
-  content: url("/img/phone.png");
+  content: url("../img/phone.png");
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;

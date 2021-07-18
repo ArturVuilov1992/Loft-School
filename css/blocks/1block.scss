@@ -81,7 +81,7 @@ flex-flow: wrap;
 }
 
 .header-top-contacts::before {
-    content: url("/img/phone.png") ;
+    content: url("../img/phone.png") ;
     display: inline-flex;
     position: absolute;
     left:-1.1111rem;

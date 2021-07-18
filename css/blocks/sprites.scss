@@ -1,5 +1,18 @@
 .sprite {
     margin-right: 4rem;
+
+    @include tablets {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: 4rem;
+        margin-right: 2rem;
+
+
+    }
+
+    @include phones {
+        margin-left: 5rem;
+    }
 }
 
 .sprite-item {

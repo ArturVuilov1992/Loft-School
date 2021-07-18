@@ -109,7 +109,7 @@ section.hero {
   background: url("../img/herosectionbackground.jfif") no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  background-position: center;
 }
 
 header.header-top {
@@ -658,12 +658,13 @@ section.order {
   background: url("../img/formback.jfif") no-repeat;
   background-size: cover;
   width: 100%;
+  background-position: center;
 }
 
 h2.headline-title-order {
   font-weight: 700;
   font-size: 2.6667rem;
-  line-height: 3.2222rem;
+  line-height: 3.2223rem;
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -675,7 +676,7 @@ h2.headline-title-order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 8.3333rem;
+  margin-top: 8.3332rem;
 }
 @media screen and (max-width: 768px) {
   .form {
@@ -912,28 +913,17 @@ h2.headline-title-order {
   color: white;
 }
 
-.map {
-  max-height: 36.6667rem;
-  min-height: 0;
-}
-@media screen and (max-width: 768px) {
-  .map {
-    max-height: 29.4444rem;
-    min-height: 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .map {
-    max-height: 27.2222rem;
-    min-height: 0;
-  }
+.container-cont {
+  margin: 0;
 }
 
 .image__map {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 section.footer {

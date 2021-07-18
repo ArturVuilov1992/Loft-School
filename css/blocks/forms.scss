@@ -1,12 +1,16 @@
 section.order {
     background: url("../img/formback.jfif") no-repeat;
-    @include background-image-size;
+    background-size: cover; 
+    width: 100%;
+background-position: center;
     }
+
+
 
 
     h2.headline-title-order {
         @include big-headlines;
-        line-height: 3.2222rem;
+        line-height: 3.2223rem;
         text-align: center;
         text-transform: uppercase;
         color: white;
@@ -16,7 +20,7 @@ section.order {
 
 .form {
     display: flex;
-    margin-top: 8.3333rem;
+    margin-top: 8.3332rem;
 
     @include tablets {
             padding:0 150px;

@@ -1109,6 +1109,10 @@ section.footer {
   background-color: #333537;
 }
 
+.popup__hidden {
+  display: none;
+}
+
 .vector {
   position: absolute;
   top: 2.6rem;

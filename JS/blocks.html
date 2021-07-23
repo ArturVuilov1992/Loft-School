@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blocks</title>
+    <link rel="stylesheet" href="./blocks.css" />
+    <style>
+          
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-selector {
+  margin-right: 10px;
+}
+
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid black;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+    </style>
+
+  </head>
+  <body>
+    <div class="blocks-coloring-container">
+      <div class="controls">
+        <input type="number" min="0" class="quantity-selector" />
+        <input type="color" class="color-selector" />
+      </div>
+      <div class="blocks"></div>
+    </div>
+    <script>
+                const quantitySelector = document.querySelector(".quantity-selector");
+const colorSelector = document.querySelector(".color-selector");
+const blocksContainer = document.querySelector(".blocks");
+
+const createMarkup = (quantity) => {
+  let markup = "";
+
+  for (let i = 0; i < quantity; i++) {
+    const block = document.createElement("div");
+    block.className = "item";
+    block.innerText = i + 1;
+
+    markup += block.outerHTML;
+  }
+
+  return markup;
+};
+
+quantitySelector.addEventListener("change", (e) => {
+  const quantity = e.target.value;
+  const markup = createMarkup(quantity);
+
+  blocksContainer.innerHTML = markup;
+});
+
+const colorTheBlock = (block, color) => {
+  block.style.backgroundColor = color;
+};
+
+let changed = false;
+
+colorSelector.addEventListener("change", (e) => {
+  const color = e.target.value;
+  const items = blocksContainer.querySelectorAll(".item");
+
+  changed = !changed;
+
+  for (let i = 0; i < items.length; i++) {
+    const currentBlock = items[i];
+    const blockNumber = i + 1;
+    let colorToApply = "";
+
+    if (changed) {
+      colorToApply = blockNumber % 2 !== 0 ? color : "#fff";
+    } else {
+      colorToApply = blockNumber % 2 === 0 ? color : "#fff";
+    }
+
+    colorTheBlock(currentBlock, colorToApply);
+  }
+});
+    </script>
+  </body>
+</html>

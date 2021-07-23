@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="./slider.css" />
+
+    <style>
+            a,
+            a:visited,
+            a:active,
+            a:focus {
+            color: #0091d9;
+            text-decoration: none;
+            }
+
+            a:hover,
+            a:active,
+            a:focus {
+            color: #ff6163;
+            }
+
+            .simple-slider-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 250px;
+            }
+
+            .arrow {
+            font-size: 70px;
+            }
+
+            .slider {
+            display: flex;
+            width: 300px;
+            overflow: hidden;
+            margin: 0 10px;
+            }
+
+            .items {
+            display: flex;
+            position: relative;
+            color: rgb(24, 188, 230);
+            font-size: 30px;
+            right: 0;
+            transition: right .3s;
+            }
+
+            .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: papayawhip;
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #444;
+            }
+
+            ul {
+            padding: 0;
+            margin: 0;
+            }
+
+            li {
+            list-style: none;
+            } 
+    </style>
+  </head>
+  <body>
+
+
+    <div class="simple-slider-container">
+      <a class="arrow" id="left" href="#">←</a>
+
+      <div class="slider">
+        <ul class="items" id="items">
+          <li class="item">1</li>
+          <li class="item">2</li>
+          <li class="item">3</li>
+          <li class="item">4</li>
+          <li class="item">5</li>
+          <li class="item">6</li>
+          <li class="item">7</li>
+          <li class="item">8</li>
+          <li class="item">9</li>
+        </ul>
+      </div>
+      
+      <a class="arrow" id="right" href="#">→</a>
+    </div>
+
+
+
+    <script>
+            const left = document.querySelector("#left");
+            const right = document.querySelector("#right");
+            const items = document.querySelector(".items");
+            const computedStyles = getComputedStyle(items);
+
+           
+
+
+            right.addEventListener("click", (e) => {
+            e.preventDefault();
+            let currentRight = parseInt(computedStyles.right)
+
+            if (currentRight < 500) {
+                items.style.right = `${currentRight + 100 }px`;
+            }
+            });
+
+            left.addEventListener("click", e => {
+            e.preventDefault();
+            let currentRight = parseInt(computedStyles.right)
+
+            if (currentRight > 0) {
+                items.style.right = `${currentRight - 100}px`;
+            }
+            })
+
+    </script>
+  </body>
+</html>

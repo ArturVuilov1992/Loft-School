@@ -1,0 +1,29 @@
+.simple-slider-container {
+  display: flex;
+  width: 100%;
+  height:1000px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.slider__left-container, .slider__right-container {
+  width: 16.6667rem;
+  height: 100%;
+  
+}
+.slider__left-container {
+  padding-left: 2rem;
+  position: relative;
+  background-image: url(/img/surfboat.png), url(/img/swamp.png);
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto; 
+  background-position: center;
+}
+
+.arrow-left {
+  display: block;
+  position: absolute;
+  top: 500px;
+}
+    

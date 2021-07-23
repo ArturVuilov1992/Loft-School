@@ -517,7 +517,7 @@ header.header-top {
 
 .reviews-block {
   background-color: #F8FAF9;
-  padding: 2.2222rem 7.7778rem 2.2222rem 2.2222rem;
+  padding: 2.2222rem 7.7778rem 2.2222rem 2.2221rem;
 }
 
 .reviews-block-inner {
@@ -1054,5 +1054,74 @@ section.footer {
 }
 
 .sprite__link {
+  text-decoration: none;
+}
+
+.simple-slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.slider__left-container, .slider__right-container {
+  width: 16.6667rem;
+  height: 100%;
+}
+
+.slider__left-container {
+  padding-left: 2rem;
+  position: relative;
+  background-image: url(/img/surfboat.png), url(/img/swamp.png);
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+  background-position: center;
+}
+
+.arrow-left {
+  display: block;
+  position: absolute;
+  top: 500px;
+}
+
+.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #333537;
+}
+
+.vector {
+  position: absolute;
+  top: 2.6rem;
+  right: 5vw;
+}
+
+.popup__list {
+  text-align: center;
+}
+
+.popup__link {
+  font-size: 2rem;
+  line-height: 4rem;
+  color: white;
   text-decoration: none;
 }

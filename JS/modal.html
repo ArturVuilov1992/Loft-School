@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./modal.css" />
+    <title>Modal</title>
+
+<style>
+        body, html {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(00, 00, 00, .2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.modal-container {
+  position: relative;
+}
+
+.content {
+  width: 400px;
+  background: #444;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  margin: 0;
+}
+
+.close {
+  color: #fff;
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  background: #d00;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.close:hover {
+  background: #d33;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  background: #a492e6;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 18px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+</style>
+
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem magnam
+        ratione quasi alias adipisci molestias doloribus, provident eum natus
+        rerum, numquam delectus cum at nobis consectetur deserunt perspiciatis
+        eveniet temporibus.
+      </p>
+      <button class="btn" id="openOverlay">открыть</button>
+    </div>
+    <script type="html/template" id="overlayTemplate">
+      <div class="modal-container">
+        <a class="close" href="#">x</a>
+        <div class="content"></div>
+      </div>
+    </script>
+    <script>
+        const openButton = document.querySelector("#openOverlay");
+        const successModal = createModal("The massage has been sent, thank you!");
+        const body = document.body;
+
+        openButton.addEventListener("click", e => {
+        body.appendChild(successModal);
+        })
+
+        function createModal(content) {
+        const overlayElement = document.createElement("div");
+        overlayElement.classList.add("overlay");
+
+        const template = document.querySelector("#overlayTemplate");
+
+        overlayElement.innerHTML = template.innerHTML;
+        overlayElement.addEventListener("click", e => {
+            if (e.target === overlayElement) {
+            closeElement.click();
+            }
+        })
+
+        const closeElement = overlayElement.querySelector(".close");
+        closeElement.addEventListener("click", e => {
+            e.preventDefault();
+            body.removeChild(overlayElement);
+        })
+
+        const contentElement = overlayElement.querySelector(".content");
+        contentElement.innerHTML = content;
+
+        return overlayElement;
+        }
+    </script>
+  </body>
+</html>

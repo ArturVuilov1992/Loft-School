@@ -834,6 +834,11 @@ h2.headline-title-order {
   margin-right: 1.1111rem;
 }
 
+.error {
+  outline: 5px solid red;
+  outline-style: inset;
+}
+
 .fixed-menu {
   position: fixed;
   top: 20%;
@@ -1021,7 +1026,7 @@ section.footer {
 }
 
 .footer__call::before {
-  content: url("/img/phone2.png");
+  content: url("../img/phone2.png");
   position: absolute;
   left: -1.1111rem;
   -ms-flex-negative: 0;
@@ -1080,6 +1085,7 @@ section.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .slider__list {
@@ -1148,7 +1154,7 @@ section.footer {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  background-image: url("../img/orangeboat.png"), url("../img/swamp.png");
+  background-image: url("../img/orbo.png"), url("../img/swamp.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 90% 90%, 20.6667rem 21rem;
   background-position: center, center;

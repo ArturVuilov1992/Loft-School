@@ -16,6 +16,11 @@ arrows.forEach((arrow) => {
              } else {
                 startIndex = 0;
             } 
+
+
+
+
+            
         } else {
             if (startIndex > 0) {
                 startIndex--;

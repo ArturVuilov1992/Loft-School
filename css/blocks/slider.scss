@@ -2,6 +2,8 @@
   width: 100%;
 }
 .slider-container   {
+  display: flex;
+  align-items: center;
   width:100%;
   position: relative;
   height: 100vh;
@@ -121,6 +123,11 @@
     display: none;
   }
 }
+.slider__rectangle:hover > .rectangle__list {display: flex;}
+
+
+
+
 .slider__rectangle2 {
   width:91px;
   height:91px;

@@ -660,6 +660,12 @@ section.order {
   background-size: cover;
   width: 100%;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h2.headline-title-order {
@@ -1068,6 +1074,12 @@ section.footer {
 }
 
 .slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   position: relative;
   height: 100vh;
@@ -1221,6 +1233,12 @@ section.footer {
   .slider__rectangle {
     display: none;
   }
+}
+
+.slider__rectangle:hover > .rectangle__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slider__rectangle2 {
@@ -1667,4 +1685,76 @@ section.footer {
   line-height: 4rem;
   color: white;
   text-decoration: none;
+}
+
+.rectangle__list {
+  z-index: 1000;
+  position: absolute;
+  width: 16.1111rem;
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+          box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  display: none;
+  padding: 1.5rem;
+  left: 5rem;
+  top: 0;
+  border-radius: 2%;
+}
+
+.rectangle__list-list {
+  width: 16.1111rem;
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.rectangle__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.rectangle__item-desc {
+  font-weight: 500;
+  font-size: 0.8889rem;
+  line-height: 1.3333rem;
+  color: black;
+}
+
+.rectangle__item-num {
+  font-weight: 400;
+  font-size: 0.8889rem;
+  line-height: 1.3333rem;
+  color: black;
+}
+
+.pic__pain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

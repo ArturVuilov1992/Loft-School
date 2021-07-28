@@ -284,8 +284,6 @@ header.header-top {
 }
 @media screen and (max-width: 768px) {
   .hero-main-slogan-slogan {
-    padding-right: 1rem;
-    padding-left: 1rem;
     font-size: 1.1667rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -297,7 +295,6 @@ header.header-top {
 }
 @media screen and (max-width: 480px) {
   .hero-main-slogan-slogan {
-    margin-right: 3rem;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
@@ -389,34 +386,49 @@ header.header-top {
   margin-bottom: 0.2778rem;
 }
 
-.headline {
-  margin-top: 300px;
+.ostrog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .headline-title {
   font-weight: 700;
   font-size: 2.6667rem;
-  line-height: 3.2222rem;
+  line-height: 3.1111rem;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 480px) {
   .headline-title {
     font-size: 2.2222rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
   }
-}
-
-.section-title {
-  margin-bottom: 0.8333rem;
-  margin-top: -5.5556rem;
 }
 
 .headline-subtitle {
   font-weight: 400;
-  line-height: 0.8333rem;
+  line-height: 1rem;
   text-align: center;
   color: #666666;
-  margin-bottom: 2.7778rem;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .headline-subtitle {
+    margin-bottom: 3rem;
+  }
 }
 
 .benefits {
@@ -466,7 +478,12 @@ header.header-top {
     display: -ms-flexbox;
     display: flex;
     text-align: left;
+    margin-bottom: 2rem;
   }
+}
+
+li.benefits-item:last-child {
+  margin-bottom: 0;
 }
 
 .benefit-image-wrapper {
@@ -477,10 +494,12 @@ header.header-top {
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 480px) {
   .benefit-image-wrapper {
     margin-right: 1.1111rem;
+    margin-bottom: 0;
   }
 }
 
@@ -500,7 +519,6 @@ header.header-top {
   font-size: 1.5rem;
   line-height: 1.7778rem;
   margin-bottom: 1.1111rem;
-  margin-top: 1.1111rem;
 }
 @media screen and (max-width: 480px) {
   .benefit-title {

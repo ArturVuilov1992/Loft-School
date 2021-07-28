@@ -124,8 +124,8 @@ line-height: 1rem;
     line-height: 3.2222rem;
     color:white;
     margin-bottom: 0.5556rem;
-    // margin-top: 4.4444rem;
-   // max-width: 32.2222rem;
+    //text-align:start;
+   
    
     @include tablets {
         font-size: 6vw;
@@ -149,8 +149,8 @@ font-weight: 400;
 
 
     @include tablets {
-        padding-right:1rem;
-        padding-left:1rem;
+        //padding-right:1rem;
+        //padding-left:1rem;
         font-size: 1.1667rem;
         display: flex;
         flex-wrap: nowrap;
@@ -158,7 +158,7 @@ font-weight: 400;
     }
 
         @include phones {
-            margin-right: 3rem;
+            //margin-right: 3rem;
             flex-wrap: nowrap;
         }
     }

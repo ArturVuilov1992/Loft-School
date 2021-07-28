@@ -97,17 +97,7 @@
   }
 }
 
-.slider__one-right2 {
-  width:50%;
-  height: 100%;
-  display: flex;
-  justify-content:left;
 
-  @include tablets {
-    width: 100%;
-    height: 50%;
-  }
-}
 
 .slider__rectangle {
   width:91px;
@@ -128,21 +118,6 @@
 
 
 
-.slider__rectangle2 {
-  width:91px;
-  height:91px;
-  background-color: #3A587E;
-  position:relative;
-  border-radius: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-bottom: 4rem;
-  @include tablets {
-    display: none;
-  }
-}
-
 .rectangle__image {
   position: absolute;
   top: 50%;
@@ -154,27 +129,14 @@
   text-align: center;
 }
 
-.rectangle__image2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background: no-repeat;
-  width:38px;
-  height:38px;
-  text-align: center;
-}
+
 
 .rectangle__name {
   font-size:14px;
 color: white;
 margin-bottom: .3rem;
  }
- .rectangle__name2 {
-  font-size:14px;
-color: white;
-margin-bottom: .3rem;
- }
+ 
 
 
 .slider__right-fakeblock {
@@ -188,16 +150,7 @@ margin-bottom: .3rem;
       }
 }
 
-.slider__right-fakeblock2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: left;
-  @include tablets {
-    justify-content: center;
-    align-items: center;
-      }
-}
+
 
 .slider__right-heading {
   display: flex;
@@ -213,19 +166,6 @@ align-self: start;
   margin-bottom: 1rem;
 }}
 
-.slider__right-heading2 {
-  display: flex;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  margin-bottom: 2rem;
-align-self: start;
-@include tablets {
-  align-self: center;
-  font-size: 30px;
-  line-height: 36px;
-  margin-bottom: 1rem;
-}}
 
 .slider__right-block {
   margin-bottom: 0rem;
@@ -237,15 +177,7 @@ flex-direction: column;
   }
 }
 
-.slider__right-block2 {
-  margin-bottom: 0rem;
-  @include tablets {
-display: flex;
-flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
+
 .right__block-text {
   font-size: 18px;
   line-height: 22px;
@@ -261,20 +193,7 @@ flex-direction: column;
       }
 }
 
-.right__block-text2 {
-  font-size: 18px;
-  line-height: 22px;
-  color: #666666;
-  margin-bottom: 2rem;
 
-  @include tablets {
-    align-self: center;
-  font-size: 18px;
-  line-height: 20px;
-  margin-bottom: 1rem;
-  vertical-align: top;
-      }
-}
 
 .right__block-subtext {
   display: flex;
@@ -283,13 +202,7 @@ flex-direction: column;
     margin-bottom: 1rem;
       }  }
 
-      .right__block-subtext2 {
-        display: flex;
-        margin-bottom: 2rem;
-        @include tablets {
-          margin-bottom: 1rem;
-            }  }
-
+      
   .subtext__one {
     margin-right: 4rem;
     margin-bottom: 2rem;
@@ -297,13 +210,7 @@ flex-direction: column;
       margin-bottom: 1rem;
         }}
 
-        .subtext__one2 {
-          margin-right: 4rem;
-          margin-bottom: 2rem;
-              @include tablets {
-            margin-bottom: 1rem;
-              }}
-
+       
   .kiss {
     font-size: 18px;
     line-height:20px;
@@ -316,18 +223,7 @@ flex-direction: column;
     margin-bottom: .5rem;
         }}
 
-        .kiss2 {
-          font-size: 18px;
-          line-height:20px;
-          color: #666666;
-          margin-bottom: .3rem;
-          @include tablets {
-            align-self: center;
-          font-size: 18px;
-          line-height: 20px;
-          margin-bottom: .5rem;
-              }}
-
+       
     .lips {
       font-weight: 700;
       color: black;
@@ -340,17 +236,7 @@ flex-direction: column;
     margin-bottom: 1rem;
         }}
 
-        .lips2 {
-          font-weight: 700;
-          color: black;
-          font-size: 18px;
-        line-height:20px;
-        @include tablets {
-          align-self: center;
-        font-size: 18px;
-        line-height: 20px;
-        margin-bottom: 1rem;
-            }}
+        
 
     .right-container-bottom {
       display: flex;
@@ -372,14 +258,7 @@ flex-direction: column;
       margin-right: 4rem;
     }
 
-    .bottom__price2 {
-      font-weight: 300;
-      color: #151515;
-      font-size: 60px;
-      line-height:60px;
-      margin-right: 4rem;
-    }
-
+    
 
 
 .arrow {

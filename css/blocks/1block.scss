@@ -18,7 +18,7 @@ header.header-top {
         width: 100%;
         height: 5rem;
         background-color: #1968B1;
-        margin-bottom: 8.3333rem;
+        margin-bottom: 13rem;
     };
 }
 
@@ -28,8 +28,8 @@ header.header-top {
     }
 }
 .menu {
-    margin: 0 1.5rem;
-flex-flow: wrap;
+    margin: 0 .5rem;
+    flex-flow: wrap;
 
     @include tablets {
         display: none;
@@ -56,13 +56,13 @@ flex-flow: wrap;
 }
 
 .menu-item {
-    margin-right:0.8333rem;
+    margin-right:1rem;
     margin-top:1.4444rem;
 }
 
 .menu-link {
     color: white;
-    line-height: 138%;
+    line-height: 1.2222rem;
     text-decoration: none;
     font-weight: bold;
     white-space: nowrap;
@@ -77,7 +77,7 @@ flex-flow: wrap;
     font-size: 1.2222rem;
     line-height: 1rem;
     margin-top:1.4444rem;
-    margin-right:2.2222rem;
+    margin-right:1rem;
     position: relative;
 }
 
@@ -92,7 +92,13 @@ flex-flow: wrap;
 .phone-number {
     color:white;
     text-decoration: none;
+    font-size: 1.2222rem;
+line-height: 1rem;
 }
+
+
+
+
 
 
 
@@ -100,39 +106,47 @@ flex-flow: wrap;
     margin-left: 2rem;
 
     @include tablets {
+        margin-left: 0;
         width: 100%;
-        flex:1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content:end;
         align-items: center;
         text-align:center;
     };
-    width: 46%;
-    margin-top: 2.2222rem;
+    //width: 46%;
+    //margin-top: 2.2222rem;
 }
 
-.hero-main-slogan {
-    @include big-headlines;
-    line-height: 3.1667rem;
+.hero-main-slogan {   
+     @include big-headlines;
+     font-size: 48px;
+    line-height: 3.2222rem;
     color:white;
-    margin-top: 4.4444rem;
-    max-width: 32.2222rem;
     margin-bottom: 0.5556rem;
-
+    // margin-top: 4.4444rem;
+   // max-width: 32.2222rem;
+   
     @include tablets {
-        line-height: 3.1667rem ;
-        margin-bottom: -15px;
+        font-size: 6vw;
+        line-height: 2.5rem;        
 
     }
-
     @include phones {
-        font-size: 2.2222rem;
-        margin-right: 3rem;
+        line-height: 2rem;        
     }
 }
 
 .hero-main-slogan-slogan {
+//display: flex;align-items: flex-end;
+font-weight: 400;
+    font-size: 1.1667rem;
+    line-height: 1.3889rem;    
+    color: white;
+    //margin-top: 2.2222rem;
+    //max-width: 21.1111rem;
+    margin-bottom: 2rem;
+
 
     @include tablets {
         padding-right:1rem;
@@ -141,26 +155,17 @@ flex-flow: wrap;
         display: flex;
         flex-wrap: nowrap;
         margin-bottom: 2rem;
+    }
 
         @include phones {
             margin-right: 3rem;
+            flex-wrap: nowrap;
         }
-
-        
-    };
-    @include sub-headlines;
-    color: white;
-    margin-top: 2.2222rem;
-    max-width: 21.1111rem;
-    margin-bottom: 3rem;
-}
-
-
+    }
 .btn-title-section {
-margin-bottom: 12vw;
+margin-bottom: 4rem;
 
 @include phones {
-    
     margin-right: 3rem;
 }
 }

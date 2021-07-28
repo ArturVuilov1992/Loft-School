@@ -101,9 +101,15 @@ img {
           flex-direction: column;
 }
 
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+
 section {
   height: 100vh;
-  min-height: 50rem;
 }
 
 section.hero {
@@ -130,7 +136,7 @@ header.header-top {
     width: 100%;
     height: 5rem;
     background-color: #1968B1;
-    margin-bottom: 8.3333rem;
+    margin-bottom: 13rem;
   }
 }
 
@@ -141,7 +147,7 @@ header.header-top {
 }
 
 .menu {
-  margin: 0 1.5rem;
+  margin: 0 0.5rem;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
 }
@@ -181,13 +187,13 @@ header.header-top {
 }
 
 .menu-item {
-  margin-right: 0.8333rem;
+  margin-right: 1rem;
   margin-top: 1.4444rem;
 }
 
 .menu-link {
   color: white;
-  line-height: 138%;
+  line-height: 1.2222rem;
   text-decoration: none;
   font-weight: bold;
   white-space: nowrap;
@@ -198,7 +204,7 @@ header.header-top {
   font-size: 1.2222rem;
   line-height: 1rem;
   margin-top: 1.4444rem;
-  margin-right: 2.2222rem;
+  margin-right: 1rem;
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -221,19 +227,17 @@ header.header-top {
 .phone-number {
   color: white;
   text-decoration: none;
+  font-size: 1.2222rem;
+  line-height: 1rem;
 }
 
 .hero-title-section {
   margin-left: 2rem;
-  width: 46%;
-  margin-top: 2.2222rem;
 }
 @media screen and (max-width: 768px) {
   .hero-title-section {
+    margin-left: 0;
     width: 100%;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -241,9 +245,9 @@ header.header-top {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -254,33 +258,29 @@ header.header-top {
 .hero-main-slogan {
   font-weight: 700;
   font-size: 2.6667rem;
-  line-height: 3.1667rem;
+  font-size: 48px;
+  line-height: 3.2222rem;
   color: white;
-  margin-top: 4.4444rem;
-  max-width: 32.2222rem;
   margin-bottom: 0.5556rem;
 }
 @media screen and (max-width: 768px) {
   .hero-main-slogan {
-    line-height: 3.1667rem;
-    margin-bottom: -15px;
+    font-size: 6vw;
+    line-height: 2.5rem;
   }
 }
 @media screen and (max-width: 480px) {
   .hero-main-slogan {
-    font-size: 2.2222rem;
-    margin-right: 3rem;
+    line-height: 2rem;
   }
 }
 
 .hero-main-slogan-slogan {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.1667rem;
   line-height: 1.3889rem;
   color: white;
-  margin-top: 2.2222rem;
-  max-width: 21.1111rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 768px) {
   .hero-main-slogan-slogan {
@@ -295,14 +295,16 @@ header.header-top {
     margin-bottom: 2rem;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .hero-main-slogan-slogan {
     margin-right: 3rem;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
 .btn-title-section {
-  margin-bottom: 12vw;
+  margin-bottom: 4rem;
 }
 @media screen and (max-width: 480px) {
   .btn-title-section {
@@ -847,7 +849,7 @@ h2.headline-title-order {
 
 .fixed-menu {
   position: fixed;
-  top: 20%;
+  top: 40%;
   right: 4%;
   z-index: 100;
 }
@@ -1124,24 +1126,6 @@ section.footer {
   }
 }
 
-.slider__item2 {
-  width: 100%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-@media screen and (max-width: 768px) {
-  .slider__item2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .hoho {
   width: 50%;
   display: -webkit-box;
@@ -1192,6 +1176,10 @@ section.footer {
   .slider__one-right {
     width: 100%;
     height: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

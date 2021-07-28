@@ -1,4 +1,4 @@
-$(document).ready(r => {
+//$(document).ready(r => {
     //$(".btn").click( e =>{
                 //let link = $(".menu-link").width();
         //$(".menu-link").width("1%")
@@ -16,11 +16,14 @@ $(document).ready(r => {
    // });
    //let radio = $(".menu-link");
   //console.log(radio.length);
-  $(".btn").on("click", function (e) {
+  //$(".btn").on("click", function (e) {
    //$(this).css("color", "green");//c this не исполeьзуются стрелочные функции, только стандарт function(e){...}
 //let err = $(e.currentTarget);
-$(".menu-link").eq(1).css("color", "brown");
-    //console.log();
+//let dom = $(".rectangle__list-item").each( (sdx,item) => {
+    
+  //$(item).text(sdx);   
 
-    })
-})
+  //});
+ //console.log(dom);
+    //})
+//})

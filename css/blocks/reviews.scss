@@ -1,20 +1,39 @@
 .reviews {
-    //margin-bottom: 7rem;
+    min-width: 100%;
+
 }
 .reviews-block {
     background-color: #F8FAF9;
     padding: 2.2222rem 7.7778rem 2.2222rem 2.2221rem;
+    min-height: 350px;
+    min-width: 100%;
+    position: relative;
     }
 
 .reviews-block-inner {
     display: flex;
     justify-content: space-around;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
 
-@include tablets {
+    @include tablets {
     flex-direction: column;
     text-align: center;
-    align-items: center;}
+    align-items: center;
 }
+}
+
+    .active {
+    position: static;
+    opacity: 1;
+}
+
+
+
 
 .reviews-avatar {
     width:13.8889rem;
@@ -81,9 +100,6 @@
 
 .reviews-switcher {
     @include center-flex;
-
-    @include tablets {
-    }
 }
 
 .interactive-avatar {
@@ -94,7 +110,7 @@
     overflow: hidden;
     position: relative;
 }
-.interactive-avatar:hover {
+.active-active {
     border-color: #FEDB3F;
 }
 .interactive-avatar-link {
@@ -104,11 +120,13 @@
     left:0;
     right:0;
     display: block;
+    width: 100%;
+    height: 100%;
     }
 
-    .interactive-avatar-pic {
-        display: block;
-        width:100%;
-        height:100%;
-        object-fit: cover;
+.interactive-avatar-pic {
+    display: block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
     }

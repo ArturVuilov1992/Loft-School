@@ -1590,3 +1590,126 @@ section.footer {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.team__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-right: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  max-width: 20vw;
+}
+
+.team__item:last-child {
+  margin-right: 0;
+}
+
+.team__member {
+  width: 20vw;
+  height: 25vw;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .team__member {
+    width: 13vw;
+    height: 17vw;
+  }
+}
+
+.team__member-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team__title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.1111rem;
+  line-height: 1.3333rem;
+  font-weight: 700;
+  color: black;
+  border: none;
+  background: white;
+  position: relative;
+}
+
+.team__title::before {
+  content: "";
+  display: block;
+  background: url("../img/pointdown.png") no-repeat;
+  position: absolute;
+  left: 19vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 1vw;
+  width: 1vw;
+  color: black;
+}
+
+.team__content {
+  overflow: hidden;
+  height: 0;
+  position: absolute;
+  top: 33vw;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.team__content-block {
+  padding-bottom: 0.2778rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team__content-block-profession {
+  line-height: 1.2222rem;
+  font-weight: 700;
+}
+
+.team__content-block-desc {
+  line-height: 1.2222rem;
+  font-weight: 300;
+}

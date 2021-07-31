@@ -1,3 +1,8 @@
+
+//
+
+
+
 .slidy {
   display: flex;
   align-items: center;
@@ -45,15 +50,15 @@
 
 
 
- 
+ //болото оставляем а доску переносим в чтмл
 .hoho {
   width:50%;
   display: flex;
   height: 100%;
-  background-image: url("../img/surfboat.png"), url("../img/swamp.png");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 90% 90%, 20.6667rem 21rem;
-  background-position: center, center;
+  background-image:url("../img/swamp.png");
+  background-repeat:no-repeat;
+  background-size:20.6667rem 21rem;
+  background-position:center;
 
   @include tablets {
     width: 100%;
@@ -65,16 +70,39 @@
   width:50%;
   display: flex;
   height: 100%;
-  background-image: url("../img/orbo.png"), url("../img/swamp.png");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 90% 90%, 20.6667rem 21rem;
-  background-position: center, center;
+  background-image:url("../img/swamp.png");
+  background-repeat:no-repeat;
+  background-size:20.6667rem 21rem;
+  background-position:center;
 
   @include tablets {
     width: 100%;
     height: 50%;
   }
 }
+
+
+
+
+
+.hohoimg {
+position: relative;
+width: 100%;
+height: 100%;
+object-fit: cover;
+   margin: 0 auto;
+
+@include tablets {
+  width: 38%;
+  height: 100%;   
+@include phones {
+  width: 40%;
+
+}
+}
+}
+
+
 
 .slider__one-right {
   width:50%;
@@ -181,18 +209,18 @@
   font-size: 1rem;
   line-height: 1.2222rem;
   color: #666666;
-  margin-bottom: 36px;
+  margin-bottom: 2rem;
 
   @include tablets {
     display: flex;
-    align-self: center;
-  font-size: 1rem;
+align-items: center;
+justify-content: center;
+font-size: 1rem;
   line-height: 1.1111rem;
   margin-bottom: 1rem;
   margin-left:.5rem;
   margin-right:.5rem;
-
- // vertical-align: top;
+   width: 65vw;
   }
   }
 
@@ -251,7 +279,7 @@
       color: #151515;
       font-size: 60px;
       line-height:60px;
-      margin-right: 4rem;
+      margin-right: 2rem;
     }
 
     

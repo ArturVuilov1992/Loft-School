@@ -3,10 +3,8 @@ section.hero {
     background-size: cover; 
     width: 100%;
 background-position: center;
-    
     }; 
  
-  
    
 header.header-top {
     display: flex;
@@ -114,43 +112,38 @@ line-height: 1rem;
         align-items: center;
         text-align:center;
     };
-    //width: 46%;
-    //margin-top: 2.2222rem;
-}
+    }
 
 .hero-main-slogan {   
+        width:16.6667rem; 
+
      @include big-headlines;
      font-size: 48px;
     line-height: 3.2222rem;
     color:white;
     margin-bottom: 0.5556rem;
-    //text-align:start;
    
    
     @include tablets {
         font-size: 6vw;
-        line-height: 2.5rem;        
+        line-height: 3.5rem;        
+        width:auto; 
 
     }
     @include phones {
-        line-height: 2rem;        
+        font-size: 7vw;
     }
 }
 
 .hero-main-slogan-slogan {
-//display: flex;align-items: flex-end;
 font-weight: 400;
     font-size: 1.1667rem;
     line-height: 1.3889rem;    
     color: white;
-    //margin-top: 2.2222rem;
-    //max-width: 21.1111rem;
     margin-bottom: 2rem;
 
 
     @include tablets {
-        //padding-right:1rem;
-        //padding-left:1rem;
         font-size: 1.1667rem;
         display: flex;
         flex-wrap: nowrap;
@@ -158,7 +151,6 @@ font-weight: 400;
     }
 
         @include phones {
-            //margin-right: 3rem;
             flex-wrap: nowrap;
         }
     }
@@ -166,7 +158,7 @@ font-weight: 400;
 margin-bottom: 4rem;
 
 @include phones {
-    margin-right: 3rem;
+    //margin-right: 3rem;
 }
 }
 

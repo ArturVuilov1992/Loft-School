@@ -5,7 +5,7 @@ section.order {
     background-position: center;
     }
 
-
+// в таблетках у формы макс ширина 466пх убрать пэдинги и марджины боковые
 
 
     h2.headline-title-order {
@@ -26,12 +26,15 @@ section.order {
 .form {
     display: flex;
     margin-right: 3rem; margin-left: 3rem;
+   
     @include tablets {
-            padding:0 8.3333rem;
-    flex-direction: column;
-    }
+    padding:0;
+    flex-direction: column; 
+    max-width: 42.7778rem;
+    margin-right: 9px; margin-left: 9px;    }
 
-    @include phones {margin-right: 0.5rem; margin-left: 0.5rem; padding: 0;}
+    @include phones {margin-right: 9px; margin-left: 9px; padding: 0;     max-width: 26.6667rem;
+    }
 }
 
 .form-col {

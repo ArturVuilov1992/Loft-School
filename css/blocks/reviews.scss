@@ -8,6 +8,11 @@
     min-height: 350px;
     min-width: 100%;
     position: relative;
+
+    @include tablets {
+        padding: 0;
+        margin-bottom: 1rem;
+        }
     }
 
 .reviews-block-inner {
@@ -24,6 +29,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    width: 95%;
 }
 }
 
@@ -42,7 +48,8 @@
     @include tablets {
     width: 7.3333rem;
     height: 7.2222rem;
-    margin-left: 4.4444rem;
+    margin-left: 0;
+    margin-bottom: 2rem;
 }
 }
  
@@ -69,10 +76,11 @@
     margin-top: 2.2222rem;
 
 @include tablets {
-    margin-left: 3.3333rem;
-}
-}
+    margin-left: 0;
+    margin-top: 0;
 
+}
+}
 .reviews-text {
     color: $textColr;
     line-height: 1.2222rem;
@@ -80,8 +88,8 @@
     margin-bottom: 1.1111rem;
 
     @include tablets {
-        
-        margin-left: 3.3333rem;
+        margin-left: 0.5rem;
+        margin-right: .5rem;
     }
 
     @include phones {
@@ -94,7 +102,7 @@
 
     @include tablets {
         
-        margin-left: 50px;
+        
     }
 }
 

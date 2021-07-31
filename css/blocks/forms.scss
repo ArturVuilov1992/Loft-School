@@ -25,8 +25,9 @@ section.order {
 
 .form {
     display: flex;
-    margin-right: 3rem; margin-left: 3rem;
-   
+    margin-right: 1rem; margin-left: 1rem;
+    max-width: 61.1111rem;
+
     @include tablets {
     padding:0;
     flex-direction: column; 

@@ -615,7 +615,7 @@
 
                                 <label for="" class="form-block">
                                     <div class="form-title"> Телефон </div>
-                                    <input type="text" class="form-input" name="phone">
+                                    <input type="number" class="form-input" name="phone">
                                 </label>
                             </div>
 
@@ -678,7 +678,7 @@
                             </div>
 
                         <div class="form__btns">
-                                <input type="submit" value="Заказать"  class="btn btn-theme-yellow">
+                                <input type="submit" value="Заказать"  class="btn btn-theme-yellow btn__form">
                                 <input type="reset" value="Очистить"   class="btn btn-theme-transparent">
                             </div>
                         </div>
@@ -731,11 +731,8 @@
                                 </a>
 
                             </div>
-
-
                         </footer>
-                    
-                </div>
+                     </div>
             </section>
 </div>
 </div>
@@ -780,6 +777,16 @@
                 </ul>
             </nav>
 
+            <div class="server server__hidden" id="server">
+                <div class="server__container">
+                    <div class="server__content">
+                        <div class="server__text"> Cообщение отправлено </div>
+                    </div> 
+                    <div class="server__btn-container">
+                        <a href="#" class="btn server__link "> ЗАКРЫТЬ </a>
+                    </div>
+                </div>
+            </div>
             
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

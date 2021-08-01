@@ -1824,3 +1824,59 @@ section.footer {
     margin: 0;
   }
 }
+
+.server {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #333537;
+  position: fixed;
+  top: 10%;
+}
+
+.server__hidden {
+  display: none;
+}
+
+.server__container {
+  width: 17.2222rem;
+  height: 9.7778rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.server__content {
+  margin-bottom: 1rem;
+}
+
+.server__text {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+}
+
+.server__link {
+  font-weight: 700;
+}

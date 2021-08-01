@@ -1,7 +1,7 @@
 const arrows = document.querySelectorAll(".arrow");
 const leftarrow = document.querySelector(".arrow-left");
 const rightarrow = document.querySelector(".arrow-right");
-const sliderItem = document.querySelector(".slider__item").length;
+const sliderItem = document.querySelectorAll(".slider__item").length;
 const slider = document.querySelector(".slider__list");
 let startIndex = 0;
 

@@ -1,26 +1,3 @@
-//const form = document.querySelector(".form")
-//const formBtn = document.querySelector(".btn__form")
-
-//formBtn.addEventListener("click", function (e) {
- //   e.preventDefault();
-    
- //  const fields = [form.elements.name, form.elements.phone, form.elements.comments];
-  //  let isValid = true;
-  //  fields.forEach(el => {
-   //        if 
-  //             (!el.value.length){isValid = false;
-   //               el.classList.add("error")}
-  //          else {el.classList.remove("error")};
-//if (isValid){console.log("data is sent")} else {console.log("data is not sent")}
- //  })
-   // console.log(isValid)})
-
-
-
-
-
-
-
 const form = document.querySelector('.form');
 const send = document.querySelector('.btn__form');
 const server = document.querySelector(".server");
@@ -42,7 +19,8 @@ send.addEventListener('click', event => {
             xhr.open("POST", "https://webdev-api.loftschool.com/sendmail");
             xhr.setRequestHeader('content-type', 'application/json');
             xhr.send(JSON.stringify(data));
-            xhr.addEventListener("load", () =>{if(xhr.response){console.log("its fine!")}})
+            xhr.addEventListener("load", () =>{if(xhr.response){    $(".server").removeClass("server__hidden");
+            )}})
         console.log("data is sent")
     }
 
@@ -81,13 +59,12 @@ function validateField(field) {
         return true;}
     }
 
-    $(".server").classList.remove("server__hidden");
     
 })
 
 
 
-$(".server__link").addEventListener("click", e => {
+$(".server__link").on("click", e => {
         e.preventDefault();
-        $(".server").classList.add('server__hidden');
+        $(".server").addClass('server__hidden');
     });

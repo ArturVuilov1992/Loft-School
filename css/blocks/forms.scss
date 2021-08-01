@@ -31,10 +31,10 @@ section.order {
     @include tablets {
     padding:0;
     flex-direction: column; 
-    max-width: 42.7778rem;
-    margin-right: 9px; margin-left: 9px;    }
+    max-width: 25.8889rem;
+    margin-right: 0.5rem; margin-left: 0.5rem;    }
 
-    @include phones {margin-right: 9px; margin-left: 9px; padding: 0;     max-width: 26.6667rem;
+    @include phones {margin-right: 0.5rem; margin-left: 0.5rem; padding: 0;     max-width: 25.5556rem;
     }
 }
 

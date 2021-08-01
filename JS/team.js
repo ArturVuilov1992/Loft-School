@@ -7,6 +7,8 @@ const openItem = item => {
     li.addClass("active");
     wrap.height(textHeight);
    }
+
+
 const closeEveryItem = (ul) => {
     const wrap = ul.find(".team__content");
    const li = ul.find(".team__item");
@@ -19,6 +21,8 @@ $(".team__title").on("click", function (e){
 const $this = $(e.currentTarget);
 const ul = $this.closest(".team");
 const li = $this.closest(".team__item");
+$(".team__title::before").css('transform','rotate('+180+'deg)');
+
 
 if (li.hasClass("active")) {
     closeEveryItem(ul);

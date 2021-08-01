@@ -38,6 +38,8 @@
      flex-direction: column;
      align-items: center;
      justify-content: center;
+
+    
    }
  }
 
@@ -174,7 +176,13 @@ object-fit: cover;
   @include tablets {
     justify-content: center;
     align-items: center;
+    max-width: 62.3333rem;;
       }
+      @include phones {
+        justify-content: center;
+        align-items: center;
+        max-width: 44.1111rem;
+          }
 }
 
 .slider__right-heading {
@@ -203,6 +211,10 @@ object-fit: cover;
   align-items: center;
   margin-right: 0;
   }
+
+  @include phones {
+    width: 100%;
+    }
 }
 
 .right__block-text {
@@ -222,6 +234,9 @@ font-size: 1rem;
   margin-right:.5rem;
    width: 65vw;
   }
+  @include phones {
+   text-align: center;
+  }
   }
 
 .right__block-subtext {
@@ -232,10 +247,21 @@ font-size: 1rem;
     justify-content: center;
     align-items: center;
   }
+
+  @include phones {
+    justify-content: center;
+    align-items: center;
+    max-width: 18rem;
+  }
   }
       
   .subtext__one  {
     margin-right: 4rem;
+    @include phones {
+      margin-right: 3rem;
+
+    }
+   
     }
        
   .kiss {
@@ -248,8 +274,13 @@ font-size: 1rem;
     align-self: center;
     font-size: 1rem;
     line-height: 1.2222rem;
-    margin-bottom: 9px;
+    margin-bottom: 0.5rem;
     }
+
+    @include tablets {
+      font-size: .9rem;
+
+      }
   }
 
   .lips {
@@ -262,7 +293,13 @@ font-size: 1rem;
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 1rem;
-  }}
+  }
+  @include phones {
+   
+    font-size: .8rem;    line-height: 1.1111rem;
+
+  }
+}
 
         
 

@@ -25,6 +25,7 @@ margin-top: 2rem;
 
 @include tablets {
     margin-top: 2rem;
+    justify-content: space-around;
 
 }
 
@@ -38,7 +39,10 @@ margin-top: 2rem;
 .footer-contacts {
     margin-left: 2rem;
 
-   
+    @include tablets {
+        margin-left: 0;
+    
+    }
 }
 
 .footer__address {

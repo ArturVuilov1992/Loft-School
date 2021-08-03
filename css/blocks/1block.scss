@@ -10,7 +10,7 @@ header.header-top {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 8rem;
+    margin-bottom: 10rem; 
 
     @include tablets {
         width: 100%;
@@ -121,7 +121,7 @@ line-height: 1rem;
      font-size: 48px;
     line-height: 3.2222rem;
     color:white;
-    margin-bottom: 0.5556rem;
+    margin-bottom: 1.5556rem;
    
    
     @include tablets {
@@ -140,7 +140,7 @@ font-weight: 400;
     font-size: 1.1667rem;
     line-height: 1.3889rem;    
     color: white;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
 
     @include tablets {
@@ -155,7 +155,7 @@ font-weight: 400;
         }
     }
 .btn-title-section {
-margin-bottom: 4rem;
+margin-bottom: 6rem;
 
 @include phones {
     //margin-right: 3rem;

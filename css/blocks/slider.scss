@@ -232,10 +232,14 @@ font-size: 1rem;
   margin-bottom: 1rem;
   margin-left:.5rem;
   margin-right:.5rem;
-   width: 65vw;
+   max-width: 65vw;
+   text-align: center;
+
   }
   @include phones {
    text-align: center;
+   max-width: 78vw;
+
   }
   }
 
@@ -246,12 +250,16 @@ font-size: 1rem;
   @include tablets {
     justify-content: center;
     align-items: center;
+    text-align: center;
+
   }
 
   @include phones {
     justify-content: center;
     align-items: center;
     max-width: 18rem;
+    text-align: center;
+
   }
   }
       
@@ -286,12 +294,12 @@ font-size: 1rem;
   .lips {
     font-weight: 700;
     color: black;
-    font-size: 18px;
+    font-size: 1rem;
     line-height:20px;
   @include tablets {
     align-self: center;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.1111rem;
     margin-bottom: 1rem;
   }
   @include phones {
@@ -306,6 +314,7 @@ font-size: 1rem;
   .right-container-bottom {
       display: flex;
       align-self: flex-start;
+      justify-content: center;
 
    @include tablets {
       align-self: center;
@@ -314,8 +323,8 @@ font-size: 1rem;
   .bottom__price {
       font-weight: 300;
       color: #151515;
-      font-size: 60px;
-      line-height:60px;
+      font-size: 3.3333rem;
+      line-height:3.3333rem;
       margin-right: 2rem;
     }
 

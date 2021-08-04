@@ -1,0 +1,31 @@
+{
+  "name": "loftsurf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "webpack": "^5.48.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-rm": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.37.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturVuilov1992/Loft-School.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturVuilov1992/Loft-School/issues"
+  },
+  "homepage": "https://github.com/ArturVuilov1992/Loft-School#readme"
+}

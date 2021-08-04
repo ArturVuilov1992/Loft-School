@@ -1,9 +1,16 @@
-.menu {
-    &:hover {
-        opacity: .5;
+.new {
+    display: flex;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    border-width: 1px;
+  
+    @media (max-width: 768px) {
+        width: 70px;
     }
- };
-
- .rrr {
-     color:blue;
- };
+ }
+  
+ .class {
+    @media (max-width: 768px) {
+        display: block;
+    }
+ }

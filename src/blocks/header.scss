@@ -1,3 +1,8 @@
 header {
     color: $main-color;
  }
+
+.new {
+    display: flex;
+    transform: translate(-50%,-50%);
+}

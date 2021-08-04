@@ -5,8 +5,9 @@ var sass = require('gulp-sass')(require('sass'));
 var concat = require('gulp-concat');
 
 const styles = ["node_modules/normalize.css/normalize.css", "src/styles/main.scss"];
-
-
+const browserSync = require("browser-sync").create();
+const reload = browserSync.reload
+const sassGlob = require('gulp-sass-glob');
 
 
 task( 'clean', function() {
@@ -15,19 +16,32 @@ task( 'clean', function() {
   })
 
 
-task ("copy", function (){
-    return src("src/**/*.scss").pipe(dest("dist"))
+task ("copy:html", function (){
+    return src("src/*.html").pipe(dest("dist")).pipe(reload({stream:true}))
 })
 
 task ("styles", function (){
     return src(styles)
     .pipe(concat('main.scss'))
+    .pipe(sassGlob())
+
     .pipe(sass().on('error', sass.logError))
     .pipe(dest('dist'));
 })
 
+task('server', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./dist"
+        }
+        
+    });
+});
+
 watch("./src/styles/**/*.scss", series("styles"))
-task ("default", series("clean", "styles"))
+watch("./src/*.html", series("copy:html"));
+
+task('default', series('clean', "copy:html", 'styles', 'server'));
 
 
 

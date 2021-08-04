@@ -336,11 +336,3 @@ template {
 [hidden] {
   display: none;
 }
-
-header {
-  color: #000;
-}
-
-.menu:hover {
-  opacity: 0.5;
-}

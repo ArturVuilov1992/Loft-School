@@ -10,20 +10,22 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="hero">
+
+
+            <section class="hero" data-section-id="hero" data-sidemenu-theme='white'>
                 <div class="container">
  
                     <header class="header-top">
                         <img src="img/logo.png" alt="" class="logo">
                         <nav class="menu">
                             <ul class="menu-list">
-                                <li class="menu-item"><a href="#" class="menu-link"> О нас </a></li>
-                                <li class="menu-item"><a href="#" class="menu-link"> Сёрфборды </a></li>
-                                <li class="menu-item"><a href="#" class="menu-link"> Команда </a></li>
-                                <li class="menu-item"><a href="#" class="menu-link"> Меню </a></li>
-                                <li class="menu-item"><a href="#" class="menu-link"> Отзывы </a></li>
-                                <li class="menu-item"><a href="#" class="menu-link"> Как мы работаем </a></li>
-                                <li class="menu-item"><a href="#" class="menu-link"> Контакты </a></li>
+                                <li class="menu-item"><a href="#" class="menu-link" data-scroll-to="benefits"> О нас </a></li>
+                                <li class="menu-item"><a href="#" class="menu-link" data-scroll-to="slider"> Сёрфборды </a></li>
+                                <li class="menu-item"><a href="#" class="menu-link" data-scroll-to="team"> Команда </a></li>
+                                <li class="menu-item"><a href="#" class="menu-link" data-scroll-to="menu"> Меню </a></li>
+                                <li class="menu-item"><a href="#" class="menu-link" data-scroll-to="reviews"> Отзывы </a></li>
+                                <li class="menu-item"><a href="#" class="menu-link" data-scroll-to="video"> Как мы работаем </a></li>
+                                <li class="menu-item"><a href="#" class="menu-link" data-scroll-to="contacts"> Контакты </a></li>
                             </ul>
                         </nav>
                        <address class="header-top-contacts"> 
@@ -50,7 +52,7 @@
                     <div class="hero-title-section">
                         <h1 class="hero-main-slogan"> ПРОФЕССИОНАЛЬНЫЕ ДОСКИ ДЛЯ СЁРФИНГА </h1>
                         <p class="hero-main-slogan-slogan"> Самый большой выбор сёрфбордов в мире </p>
-                        <a href="#" class="btn btn-title-section"> Заказать </a> 
+                        <a href="#" class="btn btn-title-section" data-scroll-to="order"> Заказать </a> 
                     </div>
                     <div class="hero-icons-section">
                         <ul class="features">
@@ -91,12 +93,7 @@
             </section>
 
 
-
-
-
-            
-
-            <section class="standard ">
+            <section class="standard" data-section-id="benefits" data-sidemenu-theme='black'>
                     <div class="container ostrog">
                         
                             <div class="headline">
@@ -151,13 +148,7 @@
             </section> 
 
 
-
-
-
-
-
-
-            <section class="standard">
+            <section class="standard" data-section-id="slider" data-sidemenu-theme='black'>
                 <div class="container slidy">
                     <div class="slider-container">
                         <ul class="slider__list" >
@@ -334,10 +325,8 @@
             </section>
 
             
-            
-
-            <section>
-                <div class="container ostrog ">
+            <section class="ostrog" data-section-id="team" data-sidemenu-theme='black'>
+                <div>
                     <div class="headline-title ggg"> КОМАНДА </div>
 
 
@@ -466,54 +455,49 @@
             </section>
 
 
-            <section class="standard products-menu-section">
+
+
+
+
+
+
+
+
+
+
+            <section class="menu-section products-menu-section" data-section-id="menu" data-sidemenu-theme='white'>
+                            <h1 class="products-menu-section_title"> Меню </h1>
+                            <ul class="products_menu">
+                                <li class="products_menu-item products_menu-item-active">
+                                    <a href="#" class="products_menu-link products_menu-link1">
+                                        <span class="products_menu-text">  </span>
+                                    </a>
+                                        <div class="products_menu-container">
+                                            <p class="products_menu-text">
+                                                Устойчивая доска для новичков. На них легко лежать, сидеть, грести, разгребаться на волны и ехать. 
+                                                Размер и плавучесть доски позволяет брать очень маленькие и пологие волны и не спеша, не прилагая
+                                                особых усилий ехать по ним.
+                                            </p>
+                                        </div>
+                                </li>
+                                <li class="products_menu-item">
+                                    <a href="#" class="products_menu-link products_menu-link2">
+                                        <span class="products_menu-text">  </span>
+                                    </a>
+                                        <div class="products_menu-container">
+                                            <p class="products_menu-text"></p>
+                                        </div>
+                                </li>
+                                <li class="products_menu-item">
+                                    <a href="#" class="products_menu-link products_menu-link3">
+                                        <span class="products_menu-text">  </span>
+                                    </a>
+                                        <div class="products_menu-container">
+                                            <p class="products_menu-text"></p>
+                                        </div>
+                                </li>
+                             </ul>
             </section>
-                <h1 class=" headline-title products-menu-section_title"> Меню </h1>
-                <ul class="products_menu">
-                    <li class="products_menu-item">
-                        <a href="" class="products_menu-title">
-                            <img src="img/hor2.png" alt="" class="products_menu-image">
-                            <div class="products_menu-text"> Лонгборды </div>
-                        </a>
-                        <div class="products_menu-content">
-                            <div class="products_menu-container">
-                                <button type="button" class="products_menu-close"></button>
-                                <div class="products_menu-content-text"> </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="products_menu-item">
-                        <a href="" class="products_menu-title">
-                            <img src="img/hor3.png" alt="" class="products_menu-image">
-                            <div class="products_menu-text"> Шортборды </div>
-                        </a>
-                        <div class="products_menu-content">
-                            <div class="products_menu-container">
-                                <button type="button" class="products_menu-close"></button>
-                                <div class="products_menu-content-text"> </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="products_menu-item">
-                        <a href="" class="products_menu-title">
-                            <img src="img/hor4.png" alt="" class="products_menu-image">
-                            <div class="products_menu-text"> Софттопы </div>
-                        </a>
-                        <div class="products_menu-content">
-                            <div class="products_menu-container">
-                                <button type="button" class="products_menu-close"></button>
-                                <div class="products_menu-content-text"> </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
-
-
-    
 
 
 
@@ -525,7 +509,20 @@
 
 
 
-            <section class="standard">
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section class="standard" data-section-id="reviews" data-sidemenu-theme='black'>
                 <div class="container ostrog">
                     <h2 class="headline-title"> ОТЗЫВЫ </h2>
                         <div class="reviews">
@@ -612,39 +609,7 @@
                 </div>
             </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <section class="order">
+            <section class="order" data-section-id="order" data-sidemenu-theme='white'>
                 <div class="container ostrog"> 
                     <h2 class="headline-title-order"> Закажите доску </h2>
                     <form action="" class="form">
@@ -735,17 +700,7 @@
                     </div>
             </section>
 
-
-
-
-
-
-
-
-
-            
-
-            <section class="footer">
+            <section class="footer" data-section-id="contacts" data-sidemenu-theme='black'>
                 <div class="container">
                     
                         <footer class="footer__info">
@@ -793,39 +748,39 @@
             <nav class="fixed-menu">
                 <ul class="fixed-menu-list">
                     <li class="fixed-menu-item fixed-menu-item-active">
-                        <a href="" class="fixed-menu-link"></a>
+                        <a href="" class="fixed-menu-link" data-scroll-to="hero"></a>
                     </li>
 
                     <li class="fixed-menu-item">
-                        <a href="" class="fixed-menu-link"></a>
+                        <a href="" class="fixed-menu-link" data-scroll-to="benefits"></a>
                     </li>
 
                     <li class="fixed-menu-item">
-                        <a href="" class="fixed-menu-link"></a>
+                        <a href="" class="fixed-menu-link" data-scroll-to="slider"></a>
                     </li>
 
                     <li class="fixed-menu-item">
-                        <a href="" class="fixed-menu-link"></a>
+                        <a href="" class="fixed-menu-link" data-scroll-to="team"></a>
                     </li>
 
                     <li class="fixed-menu-item">
-                        <a href="" class="fixed-menu-link"></a>
+                        <a href="" class="fixed-menu-link" data-scroll-to="menu"></a>
                     </li>
 
                     <li class="fixed-menu-item">
-                        <a href="" class="fixed-menu-link"></a>
+                        <a href="" class="fixed-menu-link" data-scroll-to="reviews"></a>
                     </li>
 
                     <li class="fixed-menu-item">
-                        <a href="" class="fixed-menu-link"></a>
+                        <a href="" class="fixed-menu-link" data-scroll-to="video"></a>
                     </li>
 
                     <li class="fixed-menu-item">
-                        <a href="" class="fixed-menu-link"></a>
+                        <a href="" class="fixed-menu-link" data-scroll-to="order"></a>
                     </li>
 
                     <li class="fixed-menu-item">
-                        <a href="" class="fixed-menu-link"></a>
+                        <a href="" class="fixed-menu-link" data-scroll-to="contacts"></a>
                     </li>
                 </ul>
             </nav>
@@ -842,6 +797,9 @@
             </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/node_modules/jquery-touchswipe/jquery.touchSwipe.min.js"></script>
+<script src="/node_modules/mobile-detect/mobile-detect.js"></script>
+
 <script src="JS/popup.js"></script>
 <script src="JS/form.js"></script>
 <script src="JS/slider.js"></script>

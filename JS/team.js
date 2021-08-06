@@ -1,4 +1,4 @@
-const openItem = item => {
+const openItem2 = item => {
     const li = item.closest(".team__item");
     const wrap = li.find(".team__content");
     const text = wrap.find(".team__content-block");
@@ -9,7 +9,7 @@ const openItem = item => {
    }
 
 
-const closeEveryItem = (ul) => {
+const closeEveryItem2 = (ul) => {
     const wrap = ul.find(".team__content");
    const li = ul.find(".team__item");
 
@@ -25,8 +25,8 @@ $(".team__title::before").css('transform','rotate('+180+'deg)');
 
 
 if (li.hasClass("active")) {
-    closeEveryItem(ul);
+    closeEveryItem2(ul);
 } else {
-closeEveryItem(ul);
-openItem($this);
+closeEveryItem2(ul);
+openItem2($this);
 };})

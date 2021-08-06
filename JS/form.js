@@ -22,24 +22,32 @@ const xhr = new XMLHttpRequest();
                 console.log(xhr.response)}})
         console.log("data is sent")
           }
-function validateForm(form) {let valid = true;if(!validateField(form.elements.name)){valid = false;}
-​console.log(form.elements.phone);if(!validateField(form.elements.phone)){valid = false;}
-​    if (!validateField(form.elements.comments)) {
+function validateForm(form) {
+    let valid = true;
+    if(!validateField(form.elements.name)){
+        valid = false;
+    }
+    console.log(form.elements.phone);
+
+    if(!validateField(form.elements.phone)){
+        valid = false;
+    }
+    if (!validateField(form.elements.comments)) {
         valid = false;
     }
     return valid;
-​}
-​function validateField(field) {
-​    if (!field.checkValidity()) {
+}
+function validateField(field) {
+    if (!field.checkValidity()) {
         field.classList.add("error");
         return false;
-    } 
-​    else {
+    }
+    else {
         field.classList.remove("error");
         return true;}
     }
-​  })
-​$(".server__link").on("click", e => {
+})
+$(".server__link").on("click", e => {
         e.preventDefault();
         $(".server").addClass('server__hidden');
     });

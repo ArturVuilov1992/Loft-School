@@ -35,11 +35,13 @@ function closeEveryItemInContainer (container) {
     items.removeClass(".products_menu-container-active");
     content.width(0);
 };
-
 const $this = $(e.currentTarget);
 const item = $this.closest(".products_menu-item");
 const itemOpened = item.hasClass(".products_menu-container-active");
 const container = $this.closest(".products_menu")
+
+
+
 if (itemOpened) {
     closeEveryItemInContainer(container)
 } else {

@@ -314,7 +314,8 @@ font-size: 1rem;
   .right-container-bottom {
       display: flex;
       align-self: flex-start;
-      justify-content: center;
+      justify-content: space-between;
+      min-width: 20.5556rem;
 
    @include tablets {
       align-self: center;
@@ -325,7 +326,7 @@ font-size: 1rem;
       color: #151515;
       font-size: 3.3333rem;
       line-height:3.3333rem;
-      margin-right: 2rem;
+      //margin-right: 2rem;
     }
 
     

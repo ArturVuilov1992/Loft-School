@@ -22,7 +22,7 @@ const env = process.env.NODE_ENV;
 
 
 task( 'clean', function() {
-    return src( '${DIST_PATH}/**/*', { read: false })
+    return src( `${DIST_PATH}/**/*`, { read: false })
       .pipe( rm() )
   })
 

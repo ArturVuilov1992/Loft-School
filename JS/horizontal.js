@@ -8,14 +8,10 @@ function openItem (content) {
     hiddenContent.width(reqWidth.container);
     textBlock.width(reqWidth.textContainer);
 };
-
-
 const mesureWidth = item => {
     let regItemWidth = 0;
     const screenWidth = $(window).width();
     const container = item.closest(".products_menu");
-
-
     const titlesBlocks = container.find(".products_menu-link");
     const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
     const textContainer = item.find(".products_menu-container");
@@ -32,12 +28,14 @@ const mesureWidth = item => {
         textContainer: regItemWidth - paddingRight - paddingLeft
     }
 };
+
 function closeEveryItemInContainer (container) {
     const items = container.find(".products_menu-item");
     const content = container.find(".products_menu-container");
-    items.removeClass("active");
+    items.removeClass(".products_menu-container-active");
     content.width(0);
 };
+
 const $this = $(e.currentTarget);
 const item = $this.closest(".products_menu-item");
 const itemOpened = item.hasClass(".products_menu-container-active");
@@ -48,15 +46,11 @@ if (itemOpened) {
     closeEveryItemInContainer(container)
     openItem(item);
 }
-
-
-
-
 });
 
 
-$(".products_menu-item").on("click", e =>{
-    e.preventDefault();
+//$(".products_menu-item").on("click", e =>{
+//    e.preventDefault();
 
-    closeEveryItemInContainer(".products_menu");
-})
+//    closeEveryItemInContainer(".products_menu");
+//})

@@ -1,8 +1,27 @@
 const form = document.querySelector('.form');
 const send = document.querySelector('.btn__form');
 const server = document.querySelector(".server");
+const body = document.querySelector("body");
+const html = document.querySelector("html");
+
+
+
+
 send.addEventListener('click', event => {
+
 event.preventDefault();
+const scroll = function disableScrolling(window){
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+}
+//body.classList.add("formscroll");
+//html.classList.add("fixed");
+//document.body.style.overflow = 'hidden';
+//window.onscroll = function () { window.scrollTo(0, 0); };
+//disableScrolling(window);
+
+
 if (validateForm(form)) {
             const data = {
                 name: form.elements.name.value,
@@ -15,12 +34,17 @@ const xhr = new XMLHttpRequest();
             xhr.open("POST", "https://webdev-api.loftschool.com/sendmail");
             xhr.setRequestHeader('content-type', 'application/json');
             xhr.send(JSON.stringify(data));
+
+
             xhr.addEventListener("load", () =>{
+
                 if(xhr.response){
                 $(".server").find('.server__text').text(xhr.response.message);
                 $(".server").removeClass('server__hidden')
+
                 console.log(xhr.response)}})
-        console.log("data is sent")
+        console.log("data is sent");                
+
           }
 function validateForm(form) {
     let valid = true;
@@ -51,27 +75,3 @@ $(".server__link").on("click", e => {
         e.preventDefault();
         $(".server").addClass('server__hidden');
     });
-const openItem = item => {
-    const li = item.closest(".team__item");
-    const wrap = li.find(".team__content");
-    const text = wrap.find(".team__content-block");
-    const textHeight = text.height();
-    li.addClass("active");
-    wrap.height(textHeight);
-   }
-const closeEveryItem = (ul) => {
-    const wrap = ul.find(".team__content");
-   const li = ul.find(".team__item"); 
-    li.removeClass("active");
-    wrap.height(0);
-};
-$(".team__title").on("click", function (e){
-const $this = $(e.currentTarget);
-const ul = $this.closest(".team");
-const li = $this.closest(".team__item");
-if (li.hasClass("active")) {
-    closeEveryItem(ul);
-} else {
-closeEveryItem(ul);
-openItem($this);
-};})

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap");
 html {
@@ -135,6 +136,19 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.formscroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fixed {
+  position: fixed;
+  /*позицианируем чтобы исчез скролл*/
+  width: 100%;
+  /*что бы верстка не складывалась по ширине*/
 }
 
 section.hero {
@@ -1938,8 +1952,7 @@ section.footer {
   width: 100%;
   height: 100vh;
   background-color: #333537;
-  position: fixed;
-  top: 10%;
+  top: 0%;
 }
 
 .server__hidden {
@@ -1967,6 +1980,15 @@ section.footer {
 
 .server__content {
   margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .server__text {
@@ -1974,6 +1996,16 @@ section.footer {
   font-size: 18px;
   line-height: 24px;
   color: black;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .server__link {

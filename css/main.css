@@ -1245,6 +1245,13 @@ section.footer {
     height: 50%;
   }
 }
+@media screen and (max-width: 480px) {
+  .hoho {
+    width: 100%;
+    height: 50%;
+    background-size: 18rem 19rem;
+  }
+}
 
 .hoho2 {
   width: 50%;
@@ -1261,6 +1268,13 @@ section.footer {
   .hoho2 {
     width: 100%;
     height: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hoho2 {
+    width: 100%;
+    height: 50%;
+    background-size: 18rem 19rem;
   }
 }
 
@@ -1280,7 +1294,7 @@ section.footer {
 }
 @media screen and (max-width: 768px) and (max-width: 480px) {
   .hohoimg {
-    width: 40%;
+    width: 44%;
   }
 }
 
@@ -1733,11 +1747,8 @@ section.footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 @media screen and (max-width: 768px) {
   .team {
@@ -1785,8 +1796,8 @@ section.footer {
 }
 
 .team__member {
-  width: 100%;
-  height: 25vw;
+  width: 22vw;
+  height: auto;
   margin-bottom: 1rem;
 }
 @media screen and (max-width: 480px) {

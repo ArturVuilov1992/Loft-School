@@ -1,4 +1,4 @@
-const openItem2 = item => {
+const openItem2 = (item) => {
     const li = item.closest(".team__item");
     const wrap = li.find(".team__content");
     const text = wrap.find(".team__content-block");
@@ -17,16 +17,17 @@ const closeEveryItem2 = (ul) => {
     wrap.height(0);
 };
 
-$(".team__title").on("click", function (e){
+///$(".team__title").on("click", function (e){
 const $this = $(e.currentTarget);
 const ul = $this.closest(".team");
 const li = $this.closest(".team__item");
-$(".team__title::before").css('transform','rotate('+180+'deg)');
+//$(".team__title::before").css('transform','rotate('+180+'deg)');//??????
 
 
-if (li.hasClass("active")) {
-    closeEveryItem2(ul);
-} else {
-closeEveryItem2(ul);
-openItem2($this);
-};})
+//if (li.hasClass("active")) {
+  //  closeEveryItem2($this);
+//} else {
+//closeEveryItem2($this);
+//openItem2($this);
+//};
+//})

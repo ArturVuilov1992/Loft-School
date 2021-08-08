@@ -12,6 +12,7 @@ const closeEveryItem = (ul) => {
   li.removeClass("active");
   wrap.height(0);
 };
+
 $(".team__title").on("click", function (e){
 const $this = $(e.currentTarget);
 const ul = $this.closest(".team");

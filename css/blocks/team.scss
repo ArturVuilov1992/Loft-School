@@ -40,6 +40,10 @@
     position: relative;
     //max-width: 20vw;
 
+    &.active .team__title:before {
+        transform: rotate(180deg);
+    }
+
     @include tablets {
         margin-right: 0;
         min-width: 16.1111rem;
@@ -60,9 +64,14 @@
     height: auto;//change to rem
     margin-bottom: 1rem;
 
+    @include phones {
+        width:25vw;//change to rem
+        
+    }
+
      @include phones {
-         width:13vw;//change to rem
-         height: 17vw;
+        width:25vw;//change to rem
+        
      }
 }
 
@@ -74,6 +83,8 @@
 }
 
 
+///&.active:before {
+  ////  transform: rotate(180deg); вешаем на тим айтм
 .team__title {
     display: inline-flex;
     align-items: center;
@@ -86,7 +97,9 @@
     background: white;
     position: relative;
     margin-bottom:2rem;
-}
+
+    }
+
 
 .team__title::before {
     content: "";

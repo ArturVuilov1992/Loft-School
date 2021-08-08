@@ -1,16 +1,19 @@
-section.footer {
+div.footer {
+    position: absolute;
     width: 100vw;
-    max-height: 5.2222rem;
+   min-height: 10rem;
     min-height: 0;
+    top:80%;
+    background-color: white;
 
     @include tablets {
-        max-height: 5.9444rem;
-    min-height: 0;
+        min-height: 10rem;
+
     }
 
     @include phones {
-        max-height: 8.3889rem;
-        min-height: 0;
+        min-height: 10rem;
+
     }
 
 }

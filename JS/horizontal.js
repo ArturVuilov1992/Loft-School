@@ -1,58 +1,50 @@
 $(".products_menu-link").on("click", e => {
 e.preventDefault();
-function openItem (content) {
-    const hiddenContent = content.find(".products_menu-container");
+function openItem (content) {// li
+    const hiddenContent = content.find(".products_menu-container");// container
     const reqWidth = mesureWidth(content);
-    const textBlock = item.find(".products_menu-text")
+    const textBlock = item.find(".products_menu-text")// text block
     content.addClass(".products_menu-container-active");
-    hiddenContent.width(reqWidth.container);
-    textBlock.width(reqWidth.textContainer);
-};
-const mesureWidth = item => {
+    hiddenContent.width(reqWidth.container);// container width
+    textBlock.width(reqWidth.textContainer);// text width
+    const isMobile = window.matchMedia("(max-width: 480px)").matches;
+    if(isMobile){content.addClass("mobilemenu")}////????????
+    };
+const mesureWidth = item => {//li
     let regItemWidth = 0;
     const screenWidth = $(window).width();
-    const container = item.closest(".products_menu");
-    const titlesBlocks = container.find(".products_menu-link");
-    const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
-    const textContainer = item.find(".products_menu-container");
-    const paddingLeft = parseInt(textContainer.css("padding-left"));
-    const paddingRight = parseInt(textContainer.css("padding-right"));
-    const isMobile = window.matchMedia("(max-width: 768px)").matches;
-    if (isMobile){
+    const container = item.closest(".products_menu");//ul
+    const titlesBlocks = container.find(".products_menu-link");//link
+    const titlesWidth = titlesBlocks.width() * titlesBlocks.length;// li width sum in px
+    const textContainer = item.find(".products_menu-text");//text
+    const marginLeft = parseInt(textContainer.css("margin-left") + "rem");//text paddingLeft
+    const marginRight = parseInt(textContainer.css("margin-right") + "rem");//text paddingRight
+    const isTablet = window.matchMedia("(max-width: 768px)").matches;
+    if (isTablet){
         regItemWidth =  screenWidth - titlesWidth;
     } else {
-        regItemWidth =  500;
+        regItemWidth =  30;
     }
     return {
-        container: regItemWidth,
-        textContainer: regItemWidth - paddingRight - paddingLeft
+        container: regItemWidth + "rem",
+        textContainer: (regItemWidth + "rem") - (marginRight + "rem") - (marginLeft + "rem")
     }
 };
-
 function closeEveryItemInContainer (container) {
     const items = container.find(".products_menu-item");
     const content = container.find(".products_menu-container");
-    items.removeClass(".products_menu-container-active");
+    items.removeClass(".products_menu-container-active mobilemenu");
     content.width(0);
+    
 };
 const $this = $(e.currentTarget);
 const item = $this.closest(".products_menu-item");
 const itemOpened = item.hasClass(".products_menu-container-active");
 const container = $this.closest(".products_menu")
-
-
-
 if (itemOpened) {
     closeEveryItemInContainer(container)
 } else {
     closeEveryItemInContainer(container)
-    openItem(item);
+    openItem(item);//li
 }
 });
-
-
-//$(".products_menu-item").on("click", e =>{
-//    e.preventDefault();
-
-//    closeEveryItemInContainer(".products_menu");
-//})

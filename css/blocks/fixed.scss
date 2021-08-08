@@ -16,7 +16,10 @@
         .fixed-menu-link{border-color: white;}
     }
 }
-
+.shadowed {
+ background-color: black;
+ border-color: black;
+};
 .fixed-menu-link {
     height: 1rem;
     width: 1rem;
@@ -40,8 +43,3 @@
 }
 
 
-.shadowed {
-    color: black;
-    background-color: black;
-    border-color: black;   
-}

@@ -4,22 +4,9 @@ const server = document.querySelector(".server");
 const body = document.querySelector("body");
 const html = document.querySelector("html");
 
-
-
-
 send.addEventListener('click', event => {
 
 event.preventDefault();
-const scroll = function disableScrolling(window){
-    var x=window.scrollX;
-    var y=window.scrollY;
-    window.onscroll=function(){window.scrollTo(x, y);};
-}
-//body.classList.add("formscroll");
-//html.classList.add("fixed");
-//document.body.style.overflow = 'hidden';
-//window.onscroll = function () { window.scrollTo(0, 0); };
-//disableScrolling(window);
 
 
 if (validateForm(form)) {
@@ -41,6 +28,7 @@ const xhr = new XMLHttpRequest();
                 if(xhr.response){
                 $(".server").find('.server__text').text(xhr.response.message);
                 $(".server").removeClass('server__hidden')
+                $("body").css("height","100vh")
 
                 console.log(xhr.response)}})
         console.log("data is sent");                

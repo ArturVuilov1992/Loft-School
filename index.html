@@ -609,6 +609,41 @@
                 </div>
             </section>
 
+
+            <section >
+                <div class="container ostrog">
+                    <h2 class="section__title">Как мы работаем</h2>
+                    <div class="player-section__container">
+
+                      <div class="player active">
+                        <div class="player__wrapper">
+                          <div id="yt-player" class="player__elem"></div>
+                          <div class="player__splash"></div>
+                        </div>
+
+                        <div class="player__controls">
+                          <div class="player__start" ></div>
+
+                          <div class="player__duration"></div>
+
+                          <div class="player__sound"></div>
+
+                          <div class="sound__duration"></div>
+                                                   
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+            </section>
+
+
+
+
+
+
+
             <section class="order" data-section-id="order" data-sidemenu-theme='white'>
                 <div class="container ostrog"> 
                     <h2 class="headline-title-order"> Закажите доску </h2>
@@ -695,56 +730,64 @@
             </section>
 
             <section class="map">
-                    <div class="container mopmop">
-                        <img src="img/map.png" alt="" class="image__map">
-                    </div>
-            
-
-            <div class="footer" data-section-id="contacts" data-sidemenu-theme='black'>
-                <div class="container">
+                    <div class="container mopmop" id="map"></div>
+                         <div class="footer" data-section-id="contacts" data-sidemenu-theme='black'>
+                            <div class="container">
                     
-                        <footer class="footer__info">
+                                <footer class="footer__info">
 
-                            <address class="footer-contacts"> 
-                                <p class="footer__address"> Москва,ул.Новый Арбат,д.31/12</p>
-                                <div class="footer__call">
-                                    <a href="tel:88009039090" class="footer__phone-number">88009039090</a> 
-                                </div>
-                            </address>
+                                    <address class="footer-contacts"> 
+                                        <p class="footer__address"> Москва,ул.Новый Арбат,д.31/12</p>
+                                        <div class="footer__call">
+                                            <a href="tel:88009039090" class="footer__phone-number">88009039090</a> 
+                                        </div>
+                                    </address>
 
 
-                            <div class="sprite">
-                                <a href="#" class="sprite__link" >
-                                    <svg class="sprite-item sprite__vk">
-                                        <use xlink:href="./css/blocks/sprites.svg#vk"></use>
-                                    </svg>
-                                </a>
+                                    <div class="sprite">
+                                        <a href="#" class="sprite__link" >
+                                            <svg class="sprite-item sprite__vk">
+                                                <use xlink:href="./css/blocks/sprites.svg#vk"></use>
+                                            </svg>
+                                        </a>
 
-                                <a href="#" class="sprite__link" >
-                                    <svg class="sprite-item sprite__fb">
-                                        <use xlink:href="./css/blocks/sprites.svg#fb"></use>
-                                    </svg>
-                                </a>
+                                        <a href="#" class="sprite__link" >
+                                            <svg class="sprite-item sprite__fb">
+                                                <use xlink:href="./css/blocks/sprites.svg#fb"></use>
+                                            </svg>
+                                        </a>
 
-                                <a href="#" class="sprite__link" >
-                                    <svg class="sprite-item sprite__inst">
-                                        <use xlink:href="./css/blocks/sprites.svg#inst"></use>
-                                    </svg>
-                                </a>
-                                
-                                <a href="#" class="sprite__link" >
-                                    <svg class="sprite-item sprite__tw">
-                                        <use xlink:href="./css/blocks/sprites.svg#tw"></use>
-                                    </svg>
-                                </a>
+                                        <a href="#" class="sprite__link" >
+                                            <svg class="sprite-item sprite__inst">
+                                                <use xlink:href="./css/blocks/sprites.svg#inst"></use>
+                                            </svg>
+                                        </a>
+                                        
+                                        <a href="#" class="sprite__link" >
+                                            <svg class="sprite-item sprite__tw">
+                                                <use xlink:href="./css/blocks/sprites.svg#tw"></use>
+                                            </svg>
+                                        </a>
 
-                            </div>
-                        </footer>
+                                    </div>
+                                </footer>
                      </div>
             </div>
         </section>
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
             <nav class="fixed-menu">
                 <ul class="fixed-menu-list">
@@ -797,6 +840,7 @@
                 </div>
             </div>
 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js" integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js" referrerpolicy="no-referrer"></script>
@@ -809,6 +853,10 @@
 <script src="JS/horizontal.js"></script>
 <script src="JS/ops.js"></script>
 
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+<script src="/JS/map.js"></script>
 
 
 

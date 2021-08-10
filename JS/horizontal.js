@@ -1,5 +1,6 @@
 $(".products_menu-link").on("click", e => {
 e.preventDefault();
+
 function openItem (content) {// li
     const hiddenContent = content.find(".products_menu-container");// container
     const reqWidth = mesureWidth(content);
@@ -10,6 +11,7 @@ function openItem (content) {// li
     const isMobile = window.matchMedia("(max-width: 480px)").matches;
     if(isMobile){content.addClass("mobilemenu")}////????????
     };
+
 const mesureWidth = item => {//li
     let regItemWidth = 0;
     const screenWidth = $(window).width();
@@ -20,16 +22,18 @@ const mesureWidth = item => {//li
     const marginLeft = parseInt(textContainer.css("margin-left") + "rem");//text paddingLeft
     const marginRight = parseInt(textContainer.css("margin-right") + "rem");//text paddingRight
     const isTablet = window.matchMedia("(max-width: 768px)").matches;
+
     if (isTablet){
         regItemWidth =  screenWidth - titlesWidth;
     } else {
-        regItemWidth =  30;
+        regItemWidth =  40 + "vw"
     }
     return {
-        container: regItemWidth + "rem",
-        textContainer: (regItemWidth + "rem") - (marginRight + "rem") - (marginLeft + "rem")
+        container: regItemWidth,
+        textContainer: regItemWidth - marginRight - marginLeft,
     }
 };
+
 function closeEveryItemInContainer (container) {
     const items = container.find(".products_menu-item");
     const content = container.find(".products_menu-container");
@@ -41,6 +45,8 @@ const $this = $(e.currentTarget);
 const item = $this.closest(".products_menu-item");
 const itemOpened = item.hasClass(".products_menu-container-active");
 const container = $this.closest(".products_menu")
+
+
 if (itemOpened) {
     closeEveryItemInContainer(container)
 } else {

@@ -2,12 +2,15 @@ const sections = $("section")
 const display = $(".maincontent")
 const sideMenu = $(".fixed-menu");
 const menuItems = sideMenu.find(".fixed-menu-item");
-const menuItemsBefore = menuItems.find(".fixed-menu-item::before");
+
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
 console.log(isMobile);
 let inScroll = false;
 sections.first().addClass("active")
+var activeClass = "fixed-menu-item-active";
+
+
 const countSectionPosition = sectionEq => {
     return sectionEq * -100;
 }
@@ -15,25 +18,29 @@ const countSectionPosition = sectionEq => {
 const changeMenuThemeForSection = sectionEq => {
             const currentSection = sections.eq(sectionEq);
             const menuTheme = currentSection.attr("data-sidemenu-theme");
-            const activeClass = "shadowed";
-        if (menuTheme == "black") {menuItemsBefore.addClass(activeClass)} else {menuItemsBefore.removeClass(activeClass)}
+            
+       if (menuTheme == "black") {sideMenu.addClass("shadowed")}
+       else {sideMenu.removeClass("shadowed")}
+        
+       
 }
 const resetActiveClassForItem = (items, itemEq, activeClass) => { 
     items.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);}
+
+
 const performTransition = sectionEq => {
     if( inScroll) return;
     const transitionOver = 1000;
     const mouseInertiaOver = 300;
         inScroll = true;
-        const position = countSectionPosition(sectionEq);
+        const position = countSectionPosition(sectionEq);//how many percent to move
 changeMenuThemeForSection(sectionEq);
-    display.css({
-        transform: `translateY(${position}%)`
-    });
-    resetActiveClassForItem(sections, sectionEq, "active")
+    display.css({transform: `translateY(${position}%)`});// move to this percent
+    resetActiveClassForItem(sections, sectionEq, "active")//move of active class within sections
+
     setTimeout(() => {
         inScroll = false;
-resetActiveClassForItem(menuItems, sectionEq, "fixed-menu-item-active");
+resetActiveClassForItem(menuItems, sectionEq, "fixed-menu-item-active");//move of active class within items
     }, transitionOver + mouseInertiaOver);
    };
 

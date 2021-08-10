@@ -9,19 +9,31 @@
         };
 }  
 
+
+.player-section__container {
+    @include tablets {
+        width:80%;
+        height: 19.5556rem;
+    }
+
+    @include phones {
+        width:80%;
+        height: 13rem;
+        };
+}
 .player {
     width: 36.6667rem;
     height: 21.6667rem;
     position: relative;
 
     @include tablets {
-        width: 33rem;
-    height: 19.5556rem;
+        width:100%;
+        height: 100%;
     }
 
     @include phones {
-        width: 21.8889rem;
-        height: 13rem;
+        width:100%;
+        height: 100%;
         };
 }
 
@@ -31,13 +43,13 @@
         height: 21.6667rem;
 
         @include tablets {
-            width: 33rem;
-        height: 19.5556rem;
+            width:100%;
+            height: 100%;
         }
 
         @include phones {
-            width: 21.8889rem;
-            height: 13rem;
+            width:100%;
+            height: 100%;
             };
 }
 
@@ -71,11 +83,11 @@ padding: 0 1rem;
 position: relative;
 
 @include tablets {
-    width: 33rem;
+    width: 100%;
 height: 1.8889rem;
 }
 @include phones {
-    width: 21.8889rem;
+    width: 100%;
     height: 1.2222rem;
     };
 }
@@ -91,11 +103,15 @@ height: 1.8889rem;
     @include tablets {
         width: 66px;
     height: 98px;
+    top:-620%;
+    right:43%;
     }
 
     @include phones {
         width: 44px;
         height: 65px;
+        top:-640%;
+    right:43%;
         };
 }
 
@@ -137,17 +153,17 @@ height: 1.8889rem;
 
 .player__duration {
     background: url("../img/videoduration.png") center center/cover no-repeat;
-    width: 450px;
+    width: 70%;
         height: 8px;
         position: relative;
 
         @include tablets {
-            width: 400px;
-        height: 6px;
+            width: 70%;
+            height: 6px;
         }
 
         @include phones {
-            width: 266px;
+            width: 65%;
             height: 4px;
             };
 }

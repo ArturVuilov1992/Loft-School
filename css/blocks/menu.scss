@@ -106,20 +106,20 @@ justify-content: flex-end;
     margin-right: 4.4444rem;
     margin-top: 2.2222rem;
     //width: 22.5556rem;
-    height: 6.6667rem;
+    height: auto;
 
     @include tablets {
         width: 21.2222rem;
-    height: 7.8889rem;
-    margin-left: 2.1111rem;
+        height: auto;
+        margin-left: 2.1111rem;
     margin-right: 2.7778rem;
     margin-top: 2.2222rem;
     }
 
     @include phones {
         width: 17.6667rem;
-    height: 8.0556rem;
-    margin-left: 2.1111rem;
+        height: auto;
+        margin-left: 2.1111rem;
     margin-right: 1.8889rem;
     margin-top: 1.6667rem;
     }

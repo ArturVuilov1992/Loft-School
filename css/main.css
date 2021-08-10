@@ -2232,6 +2232,11 @@ div.footer {
   bottom: 0;
   cursor: pointer;
   background: url("../img/splash.png") center center/cover no-repeat;
+  display: block;
+}
+
+.player__splash-off {
+  display: none;
 }
 
 .player__controls {
@@ -2252,6 +2257,17 @@ div.footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 1rem;
+  position: relative;
+}
+
+.player__bigbtn {
+  display: block;
+  width: 76px;
+  height: 110px;
+  position: absolute;
+  top: -258px;
+  right: 276px;
+  background: url("../img/videobigbtn.png") center center/cover no-repeat;
 }
 
 .player__start {
@@ -2260,10 +2276,30 @@ div.footer {
   height: 20px;
 }
 
+.player__end {
+  background: url("../img/pause.png") center center/cover no-repeat;
+  width: 12px;
+  height: 20px;
+  display: none;
+  background-color: #404040;
+  position: relative;
+}
+
 .player__duration {
   background: url("../img/videoduration.png") center center/cover no-repeat;
   width: 450px;
   height: 8px;
+  position: relative;
+}
+
+.player__duration-point {
+  width: 15px;
+  height: 15px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("/img/playerdurationpoint.png") center center/cover no-repeat;
+  bottom: -3px;
 }
 
 .player__sound {
@@ -2276,4 +2312,19 @@ div.footer {
   background: url("../img/soundvolume.png") center center/cover no-repeat;
   width: 38px;
   height: 8px;
+  position: relative;
+}
+
+.sound__duration-point {
+  width: 15px;
+  height: 15px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("/img/playerdurationpoint.png") center center/cover no-repeat;
+  bottom: -3px;
+}
+
+.disappear {
+  display: none;
 }

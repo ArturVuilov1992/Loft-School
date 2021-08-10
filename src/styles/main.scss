@@ -1,5 +1,9 @@
 
 $main-color:#000;
 
-@import '../blocks/*.scss';
+@import '../blocks/header.scss';
+
+p {
+    margin: auto;
+}
 

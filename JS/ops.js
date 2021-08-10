@@ -95,6 +95,15 @@ $("[data-scroll-to]").on("click", e => {
     performTransition(reqSection.index())
 })
 
+$(".popup__list-item").on("touchmove", e => e.preventDefault())
+$("[data-scroll-to]").on("click", e => {
+    e.preventDefault();
+    const $this = $(e.currentTarget);
+    const target = $this.attr("data-scroll-to");
+    const reqSection = $(`[data-section-id=${target}]`);
+    performTransition(reqSection.index())
+})
+
 if (isMobile) {
 /*     $("body").swipe( 
         {

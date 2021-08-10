@@ -14,12 +14,31 @@
     height: 21.6667rem;
     position: relative;
 
+    @include tablets {
+        width: 33rem;
+    height: 19.5556rem;
+    }
+
+    @include phones {
+        width: 21.8889rem;
+        height: 13rem;
+        };
 }
 
 .player__wrapper {
         position: relative;
         width: 36.6667rem;
         height: 21.6667rem;
+
+        @include tablets {
+            width: 33rem;
+        height: 19.5556rem;
+        }
+
+        @include phones {
+            width: 21.8889rem;
+            height: 13rem;
+            };
 }
 
  .player__splash {
@@ -50,6 +69,15 @@ align-items: center;
 justify-content: space-between;
 padding: 0 1rem;
 position: relative;
+
+@include tablets {
+    width: 33rem;
+height: 1.8889rem;
+}
+@include phones {
+    width: 21.8889rem;
+    height: 1.2222rem;
+    };
 }
 
 .player__bigbtn {
@@ -57,16 +85,34 @@ position: relative;
     width: 76px;
     height: 110px;
     position: absolute;
-    top:-258px;
-    right:276px;
+    top:-14.3333rem;
+    right:15.3333rem;
     background: url("../img/videobigbtn.png") center center/cover no-repeat;
+    @include tablets {
+        width: 66px;
+    height: 98px;
+    }
 
+    @include phones {
+        width: 44px;
+        height: 65px;
+        };
 }
 
 .player__start {
     background: url("../img/play.png") center center/cover no-repeat;
     width: 12px;
         height: 20px;
+
+        @include tablets {
+            width: 10px;
+        height: 14px;
+        }
+
+        @include phones {
+            width: 6px;
+            height: 10px;
+            };
 }
 .player__end {
     background: url("../img/pause.png") center center/cover no-repeat;
@@ -77,6 +123,16 @@ position: relative;
         position: relative;
        // left:20px;
 
+       @include tablets {
+        width: 10px;
+    height: 14px;
+    }
+
+    @include phones {
+        width: 6px;
+        height: 10px;
+        };
+
 }  
 
 .player__duration {
@@ -84,6 +140,16 @@ position: relative;
     width: 450px;
         height: 8px;
         position: relative;
+
+        @include tablets {
+            width: 400px;
+        height: 6px;
+        }
+
+        @include phones {
+            width: 266px;
+            height: 4px;
+            };
 }
 .player__duration-point {
             width: 15px;
@@ -93,6 +159,16 @@ position: relative;
         position: absolute;
         background: url("/img/playerdurationpoint.png") center center/cover no-repeat;
         bottom: -3px;
+
+        @include tablets {
+            width: 12px;
+        height: 12px;
+        }
+
+        @include phones {
+            width: 8px;
+            height: 8px;
+            };
         }
 
 
@@ -100,6 +176,15 @@ position: relative;
     background: url("../img/sound.png") center center/cover no-repeat;
     width: 12px;
         height: 20px;
+
+        @include tablets {
+            width: 10px;
+        height: 14px;
+        }
+        @include phones {
+            width: 8px;
+            height: 10px;
+            };
 }
 
 .sound__duration {
@@ -107,6 +192,14 @@ position: relative;
     width: 38px;
         height: 8px;
         position: relative;
+        @include tablets {
+        height: 6px;
+        }
+
+        @include phones {
+            width: 36px;
+            height: 4px;
+            };
 }
 
 .sound__duration-point {
@@ -117,6 +210,16 @@ position: relative;
     position: absolute;
     background: url("/img/playerdurationpoint.png") center center/cover no-repeat;
     bottom: -3px;
+
+    @include tablets {
+        width: 13px;
+    height: 13px;
+    }
+
+    @include phones {
+        width: 8px;
+        height: 8px;
+        };
 }
 
 

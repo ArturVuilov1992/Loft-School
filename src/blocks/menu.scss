@@ -1,20 +1,137 @@
-.new {
+.menu-section {
+    background: url("../img/hor1.jfif") 50% no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    min-height: 36.2222rem;
     display: flex;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    border-width: 1px;
-  
-    @media (max-width: 768px) {
-        width: 70px;
-    }
- }
-  
- .class {
-    @media (max-width: 768px) {
-        display: block;
-    }
- }
+    overflow: hidden;
 
- html {
-    color: yellowgreen;
+    @include phones {
+    background: url("../img/hor1.jfif") 47% no-repeat;
+
+    }
 }
+
+.products-menu-section_title {
+    font-weight: bold;
+    font-size: 2.6667rem;
+    line-height: 3.2222rem;
+    color: white;
+    margin-top: 5.5556rem;
+    margin-left: 0.8333rem;
+    @include tablets {
+        margin-top: 4.7778rem;
+    margin-left: 2rem;
+    }
+    @include phones {
+        font-size: 2.2222rem;
+        line-height: 2rem;
+        margin-top: 4.2222rem;
+        margin-left: 0.5556rem;
+    }
+}
+
+.products_menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+z-index: 1;
+justify-content: flex-end;
+
+@include phones {
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+}
+}
+.products_menu-item {
+    height: 100%;
+    display: flex;
+}
+.products_menu-link {
+    width:5.6667rem;
+    display: block;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    position: relative;
+    white-space: nowrap;
+    @include phones {width: 5rem;}
+}
+.products_menu-link1 {
+    background-image: url("../img/hor2.png");
+}
+.products_menu-link2 {
+    background-image: url("../img/hor3.png");
+}
+.products_menu-link3 {
+    background-image: url("../img/hor4.png");
+}
+.products_menu-container {
+    width: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    background:  rgba(51, 53, 55, 0.9); 
+}
+  
+  .products_menu-container-active{
+    width: 29.1111rem;
+    z-index: 10;
+
+    @include tablets {
+        width: 26.3333rem;
+    }
+    @include phones {
+        width: 21.6667rem;
+    }
+
+  }
+
+  .products_menu-text {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: white;
+    font-size: 0.8889rem;
+    line-height: 1.3333rem;    
+    margin-left: 2.2222rem;
+    margin-right: 4.4444rem;
+    margin-top: 2.2222rem;
+    //width: 22.5556rem;
+    height: auto;
+
+    @include tablets {
+        width: 21.2222rem;
+        height: auto;
+        margin-left: 2.1111rem;
+    margin-right: 2.7778rem;
+    margin-top: 2.2222rem;
+    }
+
+    @include phones {
+        width: 17.6667rem;
+        height: auto;
+        margin-left: 2.1111rem;
+    margin-right: 1.8889rem;
+    margin-top: 1.6667rem;
+    }
+  }
+
+
+  .mobilemenu {
+      position: absolute;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom:0;
+  }
+

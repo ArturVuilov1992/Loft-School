@@ -1,0 +1,250 @@
+.section__title {
+    font-weight: 700;
+    font-size: 2.6667rem;
+    line-height: 3.2222rem;
+
+    @include phones {
+        font-size: 2.2222rem;
+    line-height: 2rem;
+        };
+}  
+
+
+.player-section__container {
+    @include tablets {
+        width:80%;
+        height: 19.5556rem;
+    }
+
+    @include phones {
+        width:80%;
+        height: 13rem;
+        };
+}
+.player {
+    width: 36.6667rem;
+    height: 21.6667rem;
+    position: relative;
+
+    @include tablets {
+        width:100%;
+        height: 100%;
+    }
+
+    @include phones {
+        width:100%;
+        height: 100%;
+        };
+}
+
+.player__wrapper {
+        position: relative;
+        width: 36.6667rem;
+        height: 21.6667rem;
+
+        @include tablets {
+            width:100%;
+            height: 100%;
+        }
+
+        @include phones {
+            width:100%;
+            height: 100%;
+            };
+}
+
+ .player__splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background: url("../img/splash.png")  center center/cover no-repeat;
+    display: block;
+} 
+
+.player__splash-off {
+    display: none;
+}
+
+.player__controls {
+    width: 36.6667rem;
+height: 2rem;
+background-color:#404040;
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 1rem;
+position: relative;
+
+@include tablets {
+    width: 100%;
+height: 1.8889rem;
+}
+@include phones {
+    width: 100%;
+    height: 1.2222rem;
+    };
+}
+
+.player__bigbtn {
+    display: block;
+    width: 76px;
+    height: 110px;
+    position: absolute;
+    top:-14.3333rem;
+    right:15.3333rem;
+    background: url("../img/videobigbtn.png") center center/cover no-repeat;
+    @include tablets {
+        width: 66px;
+    height: 98px;
+    top:-620%;
+    right:43%;
+    }
+
+    @include phones {
+        width: 44px;
+        height: 65px;
+        top:-640%;
+    right:43%;
+        };
+}
+
+.player__start {
+    background: url("../img/play.png") center center/cover no-repeat;
+    width: 12px;
+        height: 20px;
+
+        @include tablets {
+            width: 10px;
+        height: 14px;
+        }
+
+        @include phones {
+            width: 6px;
+            height: 10px;
+            };
+}
+.player__end {
+    background: url("../img/pause.png") center center/cover no-repeat;
+    width: 12px;
+        height: 20px;
+        display: none; 
+        background-color:#404040;
+        position: relative;
+       // left:20px;
+
+       @include tablets {
+        width: 10px;
+    height: 14px;
+    }
+
+    @include phones {
+        width: 6px;
+        height: 10px;
+        };
+
+}  
+
+.player__duration {
+    background: url("../img/videoduration.png") center center/cover no-repeat;
+    width: 70%;
+        height: 8px;
+        position: relative;
+
+        @include tablets {
+            width: 70%;
+            height: 6px;
+        }
+
+        @include phones {
+            width: 65%;
+            height: 4px;
+            };
+}
+.player__duration-point {
+            width: 15px;
+        height: 15px;
+        content: "";
+        display: block;
+        position: absolute;
+        background: url("../img/playerdurationpoint.png") center center/cover no-repeat;
+        bottom: -3px;
+
+        @include tablets {
+            width: 12px;
+        height: 12px;
+        }
+
+        @include phones {
+            width: 8px;
+            height: 8px;
+            bottom: -2px;
+
+            };
+        }
+
+
+.player__sound {
+    background: url("../img/sound.png") center center/cover no-repeat;
+    width: 12px;
+        height: 20px;
+
+        @include tablets {
+            width: 10px;
+        height: 14px;
+        }
+        @include phones {
+            width: 8px;
+            height: 10px;
+            };
+}
+
+.sound__duration {
+    background: url("../img/soundvolume.png") center center/cover no-repeat;
+    width: 38px;
+        height: 8px;
+        position: relative;
+        @include tablets {
+        height: 6px;
+        }
+
+        @include phones {
+            width: 36px;
+            height: 4px;
+            };
+}
+
+.sound__duration-point {
+    width: 15px;
+    height: 15px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../img/playerdurationpoint.png") center center/cover no-repeat;
+    bottom: -3px;
+
+    @include tablets {
+        width: 13px;
+    height: 13px;
+    }
+
+    @include phones {
+        width: 8px;
+        height: 8px;
+        };
+}
+
+
+.disappear {
+    display: none;
+}
+
+.back {
+    background-color: brown;
+}

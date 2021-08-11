@@ -1,0 +1,116 @@
+.ostrog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline-title {
+    @include big-headlines;
+    line-height: 3.1111rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+    @include phones {
+        font-size: 2.2222rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+.headline-subtitle {
+    font-weight: 400;
+    line-height: 1rem;
+    text-align: center;
+    color: $textColr;
+    margin-bottom:3rem;
+
+    @include tablets {
+        margin-bottom:3rem;
+    }
+
+   }
+
+.benefits {
+    display: flex;
+    margin-bottom: 6rem;
+
+    @include phones {
+        flex-direction: column;
+    }
+
+    @include phones {
+        margin-bottom: 5rem;
+    }
+}
+
+.benefits-item {
+    flex:1;
+    position: relative;
+    &:first-child{margin-left:0;}
+    &:last-child {margin-right:0;}
+
+    @include phones {
+        padding: 0;
+        
+    }
+}
+
+
+
+.benefit {
+    text-align: center;
+
+    @include phones {
+        display: flex;
+        text-align: left;
+        margin-bottom: 2rem;
+
+    }
+}
+li.benefits-item:last-child {
+    margin-bottom: 0;
+}
+
+.benefit-image-wrapper {
+    display: inline-block;
+    width:7.1111rem;
+    height:7.1111rem;
+    position:relative;
+    background: #F2F5F4;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+
+    @include phones {
+    margin-right: 1.1111rem;
+    margin-bottom: 0;
+    }
+}
+
+.benefit-icon {
+    width:3.7778rem;
+    height: 3.7778rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: no-repeat;
+};
+
+
+.benefit-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.7778rem;
+    margin-bottom: 1.1111rem;
+
+    @include phones {
+    font-size: 1.5rem;        }
+    }
+
+.benefit-desc {
+    color:$textColr;
+    font-weight: 300;
+    line-height: 1.2222rem;
+    }

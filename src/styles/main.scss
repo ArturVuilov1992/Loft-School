@@ -1,9 +1,40 @@
+$containerWidth:1100px;
+$containerHeight:36.1111rem;
+$baseFontSize: 18px;
+$z-fixed-menu:100;
 
-$main-color:#000;
+//color
+$textColr:#666666;
 
-@import '../blocks/header.scss';
+//breakpoints
+$tablets:768px;
+$phones:480px;
 
-p {
-    margin: auto;
-}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+@import "../blocks/media.scss";
+@import "../blocks/layout.scss";
+@import "../blocks/1block.scss";
+@import "../blocks/benefits.scss";
+@import "../blocks/reviews.scss";
+@import "../blocks/forms.scss";
+@import "../blocks/fixed.scss";
+@import "../blocks/btn.scss";
+@import "../blocks/map.scss";
+@import "../blocks/footer.scss";
+@import "../blocks/sprites.scss";
+@import "../blocks/slider.scss";
+@import "../blocks/popup.scss";
+@import "../blocks/param.scss"; 
+@import "../blocks/team.scss"; 
+@import "../blocks/serverpopup.scss";
+@import "../blocks/menu.scss"; 
+@import "../blocks/video.scss";  
+
+
+
+
+
+
+
 

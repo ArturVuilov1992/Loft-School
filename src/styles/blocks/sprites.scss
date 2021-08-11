@@ -1,0 +1,33 @@
+.sprite {
+    //margin-right: 4rem;
+
+    @include tablets {
+        display: flex;
+        flex-wrap: nowrap;
+       // margin-left: 4rem;
+        margin-right: 0;
+
+
+    }
+
+    @include phones {
+        margin-left: 0;
+    }
+}
+
+.sprite-item {
+    width: 20px;
+    height: 30px;
+    margin-right:10px;
+    position: relative;
+    &:hover {fill: #B3B3B3;}
+
+}
+
+.sprite__link {
+    text-decoration: none;
+    position: relative;
+
+    &:first-child {top: 5px;}
+    &:last-child {top: 2px;}
+}

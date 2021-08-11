@@ -33,14 +33,19 @@ task('copy:html', () => {
       .pipe(reload({ stream: true }));
    })
 
+   task('copy:img', () => {
+    return src(`${SRC_PATH}/images/*.*`)
+      .pipe(dest(`${DIST_PATH}/images/`))
+      .pipe(reload({ stream: true }));
+   })
    task('styles', () => {
     return src([...STYLE_LIBS, 'src/styles/main.scss'])
       .pipe(gulpif(env === 'dev', sourcemaps.init()))
       .pipe(concat('main.min.scss'))
       .pipe(sassGlob())
       .pipe(sass().on('error', sass.logError))
-      .pipe(px2rem())
-      .pipe(gulpif(env === 'prod', autoprefixer({
+/*       .pipe(px2rem())
+ */      .pipe(gulpif(env === 'prod', autoprefixer({
           browsers: ['last 2 versions'],
           cascade: false
         })))
@@ -104,13 +109,15 @@ task('watch', () => {
     watch('./src/*.html', series('copy:html'));
     watch('./src/scripts/*.js', series('scripts'));
     watch('./src/images/icons/*.svg', series('icons'));
+    watch('./src/images/*.*', series('copy:img'));
+
    });
 
 
    task('default',
    series(
      'clean',
-     parallel('copy:html', 'styles', 'scripts', 'icons'),
+     parallel('copy:html', 'copy:img', 'styles', 'scripts', 'icons'),
      parallel('watch', 'server')
    )
   );
@@ -118,7 +125,7 @@ task('watch', () => {
   task('build',
  series(
    'clean',
-   parallel('copy:html', 'styles', 'scripts', 'icons'))
+   parallel('copy:html', 'copy:img', 'styles', 'scripts', 'icons'))
 );
 
 //const files = ["src/styles/one.scss", "src/styles/two.scss" ];we can add this massive to return src() and it will be the same

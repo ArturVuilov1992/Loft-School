@@ -1,0 +1,186 @@
+.team__version-desktop {
+    @include tablets {
+        display:none;
+    }
+}
+
+
+.team__version-mobile {
+    display: none;
+    @include tablets {
+        display:flex;
+    }
+}
+
+
+
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    //flex: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    @include tablets {
+        margin-right: 0;
+        justify-content: flex-start;
+        flex: 0;
+    }
+}  
+
+.team__item {
+    display: flex;
+    width: 23%;
+    flex-direction: column;
+    text-align: center;
+    //margin-right: 1rem ;
+    //flex: 1;
+    align-items: center;
+    position: relative;
+    //max-width: 20vw;
+
+    &.active .team__title:before {
+        transform: rotate(180deg);
+    }
+
+    @include tablets {
+        margin-right: 0;
+        min-width: 16.1111rem;
+        width: auto;
+        }
+        @include phones {
+            margin-right: 0;
+            min-width: 7.7778rem;
+            }
+}
+
+.team__item:last-child {
+    margin-right: 0;
+}
+
+.team__member {
+    width: 22vw;
+    height: auto;//change to rem
+    margin-bottom: 1rem;
+
+    @include tablets {
+        width:50%;//change to rem
+        
+    }
+
+}
+
+.team__member-photo {
+    display: block;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+///&.active:before {
+  ////  transform: rotate(180deg); вешаем на тим айтм
+.team__title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1111rem;
+    line-height: 1.3333rem;
+    font-weight: 700;
+    color: black;
+    border: none;
+    background: white;
+    position: relative;
+    margin-bottom:2rem;
+
+    }
+
+
+.team__title::before {
+    content: "";
+    display: block;
+    background: url("./images/pointdown.png") no-repeat;
+    position: absolute;
+    right:-4px;
+    flex-shrink: 0;
+    height: 10px; //px
+    width: 10px;//px
+    color: black;
+
+    @include tablets {
+        right:-4px;
+    }}
+
+
+
+.team__content {
+    overflow:hidden;
+    height: 0;
+   // position: absolute ;
+  // top: 500px;
+
+    transition: height .5s;
+    }
+
+.team__content-block {
+    padding-bottom: 0.2778rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 5rem; 
+
+    @include tablets {
+        width: 30.5556rem;
+        margin-bottom: 2rem;
+    }
+
+    @include phones {
+        width: 21rem;
+        margin-bottom: 2rem;
+        height: 17.3333rem;
+    }
+}  
+
+.team__content-block-profession {
+    line-height: 1.2222rem;
+    font-weight: 700;
+    
+}
+
+.team__content-block-desc {
+    line-height: 1.2222rem;
+    font-weight: 300;
+    min-height: 2.5 rem; 
+    color: #666666;
+
+    @include tablets {
+        width: auto;
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+.team__version-desktop {
+    @include tablets {
+        display:none;
+    }
+}
+
+
+.team__version-mobile {
+    display: none;
+    @include tablets {
+        display:flex;
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+.ggg {
+    @include tablets {
+        margin-bottom: 3rem;
+    }
+}

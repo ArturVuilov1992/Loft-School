@@ -1,0 +1,24 @@
+.btn {
+
+    @include tablets {
+        display: flex;
+        justify-content: center;
+        width: 8.6667rem;
+        height: 3.3333rem;
+    };
+    color: black;
+    background: yellow;
+    width:8.3333rem;
+    height:3.3333rem;
+    text-decoration: none;
+font-weight: 700;
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 1.1667rem 2rem;
+cursor: pointer;
+border-radius: 100px;
+border: none;
+
+    &-theme-transparent {background: transparent; color:white;}
+}

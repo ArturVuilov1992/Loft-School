@@ -7,7 +7,7 @@ let eventsInit = () => {
 ////start-stop btns
     $(".player__start").click(e => {
       e.preventDefault();
-        
+
      // $(".player__splash").addClass("player__splash-off");
 
       if (playerContainer.hasClass("paused")) {
@@ -76,8 +76,7 @@ let eventsInit = () => {
         $(".sound__duration-point").css({
             left: `${newButtonPositionPercent2}%`
           })    
-          
-          player.setVolume(newButtonPositionPercent2);
+                    player.setVolume(newButtonPositionPercent2);
 
       });
 
@@ -116,7 +115,9 @@ let eventsInit = () => {
 
 
        ///////duration point moving
-      const onPlayerReady = () => {
+      const onPlayerReady = e => {
+        e.target.setVolume(0);
+
         let interval;
         const durationSec = player.getDuration();
         
@@ -132,11 +133,11 @@ let eventsInit = () => {
        };
 //////////
 
-$(".player__sound").on("click", e =>{
+/* $(".player__sound").on("click", e =>{
   const tap = $(e.currentTarget);
   player.mute();
     tap.addClass("back");
-})
+}) */
 
 
 $(".player__sound").on("click", e =>{

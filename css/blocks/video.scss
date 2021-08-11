@@ -173,7 +173,7 @@ height: 1.8889rem;
         content: "";
         display: block;
         position: absolute;
-        background: url("/img/playerdurationpoint.png") center center/cover no-repeat;
+        background: url("../img/playerdurationpoint.png") center center/cover no-repeat;
         bottom: -3px;
 
         @include tablets {
@@ -224,7 +224,7 @@ height: 1.8889rem;
     content: "";
     display: block;
     position: absolute;
-    background: url("/img/playerdurationpoint.png") center center/cover no-repeat;
+    background: url("../img/playerdurationpoint.png") center center/cover no-repeat;
     bottom: -3px;
 
     @include tablets {
@@ -241,4 +241,8 @@ height: 1.8889rem;
 
 .disappear {
     display: none;
+}
+
+.back {
+    background-color: brown;
 }

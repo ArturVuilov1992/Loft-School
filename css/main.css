@@ -1337,7 +1337,7 @@ div.footer {
 }
 @media screen and (max-width: 768px) {
   .hohoimg {
-    width: 38%;
+    width: 41%;
     height: 100%;
   }
 }
@@ -1929,6 +1929,19 @@ div.footer {
           justify-content: center;
   min-height: 5rem;
 }
+@media screen and (max-width: 768px) {
+  .team__content-block {
+    width: 30.5556rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team__content-block {
+    width: 21rem;
+    margin-bottom: 2rem;
+    height: 17.3333rem;
+  }
+}
 
 .team__content-block-profession {
   line-height: 1.2222rem;
@@ -2424,7 +2437,7 @@ div.footer {
   content: "";
   display: block;
   position: absolute;
-  background: url("/img/playerdurationpoint.png") center center/cover no-repeat;
+  background: url("../img/playerdurationpoint.png") center center/cover no-repeat;
   bottom: -3px;
 }
 @media screen and (max-width: 768px) {
@@ -2482,7 +2495,7 @@ div.footer {
   content: "";
   display: block;
   position: absolute;
-  background: url("/img/playerdurationpoint.png") center center/cover no-repeat;
+  background: url("../img/playerdurationpoint.png") center center/cover no-repeat;
   bottom: -3px;
 }
 @media screen and (max-width: 768px) {
@@ -2500,4 +2513,8 @@ div.footer {
 
 .disappear {
   display: none;
+}
+
+.back {
+  background-color: brown;
 }

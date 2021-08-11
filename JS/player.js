@@ -66,6 +66,24 @@ let eventsInit = () => {
       /////////////
 
 
+   $(".sound__duration").click(e => {
+        const bar2 = $(e.currentTarget);
+        const clickedPosition2 = e.originalEvent.layerX;
+        const newButtonPositionPercent2 = (clickedPosition2 / bar2.width()) * 100;
+        
+
+
+        $(".sound__duration-point").css({
+            left: `${newButtonPositionPercent2}%`
+          })    
+          
+          player.setVolume(newButtonPositionPercent2);
+
+      });
+
+
+
+
 
 
 
@@ -93,7 +111,11 @@ let eventsInit = () => {
         
         return `${minutes} : ${seconds}`;
        };
-       
+       //////////
+
+
+
+       ///////duration point moving
       const onPlayerReady = () => {
         let interval;
         const durationSec = player.getDuration();
@@ -106,12 +128,22 @@ let eventsInit = () => {
           $(".player__duration-point ").css({
             left: `${completedPercent}%`
           });
-        }, 1000);
+        }, 500);
        };
 //////////
 
+$(".player__sound").on("click", e =>{
+  const tap = $(e.currentTarget);
+  player.mute();
+    tap.addClass("back");
+})
 
 
+$(".player__sound").on("click", e =>{
+  const click = $(e.currentTarget);
+  if (click.hasClass("sound")){click.removeClass("sound");player.mute(); click.addClass("back")}
+  else {click.addClass("sound"); player.unMute(); click.removeClass("back")};
+})
 
 ////centralised func to do everything alltogether
 const onPlayerStateChange = event => {

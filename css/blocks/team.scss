@@ -130,7 +130,18 @@
     align-items: center;
     justify-content: center;
     min-height: 5rem; 
-}
+
+    @include tablets {
+        width: 30.5556rem;
+        margin-bottom: 2rem;
+    }
+
+    @include phones {
+        width: 21rem;
+        margin-bottom: 2rem;
+        height: 17.3333rem;
+    }
+}  
 
 .team__content-block-profession {
     line-height: 1.2222rem;
